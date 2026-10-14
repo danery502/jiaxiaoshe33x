@@ -1,0 +1,21 @@
+# 依赖与构建产物
+node_modules
+npm-debug.log
+
+# 本地数据与缓存（业务数据在云端，切勿打包）
+data
+*.local
+
+# 版本控制与编辑器
+.git
+.gitignore
+.svn
+.idea
+.vscode
+*.swp
+
+# 日志
+*.log
+
+# 说明文档（可选，不影响运行）
+使用说明.md

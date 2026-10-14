@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI赋能小学道德与法治·劳动教育家校社知行融合实践研究 · 湛江市第三十三小学</title>
+<style>
+:root{
+  --blue:#2b7de9; --blue-bg:#eaf3fe; --green:#2fa866; --green-bg:#e9f7ef;
+  --orange:#f08c1e; --orange-bg:#fdf1e2; --red:#e05656; --gray:#8a94a3;
+  --ink:#2b3442; --line:#e6eaf0; --card:#ffffff; --page:#f3f6fa;
+  --rad:#12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;background:var(--page);color:var(--ink);font-size:14px}
+header.top{background:linear-gradient(135deg,#1f5fb8,#2b7de9 55%,#3aa0e8);color:#fff;padding:14px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+header.top img.logo{width:52px;height:52px;border-radius:50%;background:#fff;object-fit:cover}
+header.top h1{font-size:20px;letter-spacing:1px}
+header.top .sub{font-size:12px;opacity:.9}
+header.top .badge{margin-left:auto;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);border-radius:20px;padding:5px 14px;font-size:12px}
+.wrap{padding:12px}
+.panels{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;align-items:start}
+@media(max-width:1000px){.panels{grid-template-columns:1fr}}
+.panel{background:var(--card);border-radius:14px;box-shadow:0 2px 10px rgba(30,50,90,.07);overflow:hidden;display:flex;flex-direction:column;min-height:560px}
+.panel-h{padding:12px 16px;color:#fff;display:flex;align-items:center;gap:8px;font-weight:bold;font-size:15px}
+.p-parent .panel-h{background:linear-gradient(90deg,#2b7de9,#5aa4f2)}
+.p-school .panel-h{background:linear-gradient(90deg,#2fa866,#55c184)}
+.p-comm .panel-h{background:linear-gradient(90deg,#f08c1e,#f5b45e)}
+.panel-h .role-ic{font-size:18px}
+.panel-b{padding:12px;flex:1}
+.tabs{display:flex;gap:4px;padding:0 12px 10px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.tabs button{border:1px solid var(--line);background:#f7f9fc;border-radius:16px;padding:4px 10px;font-size:12px;cursor:pointer;color:var(--ink)}
+.tabs button.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.p-school .tabs button.on{background:var(--green);border-color:var(--green)}
+.p-comm .tabs button.on{background:var(--orange);border-color:var(--orange)}
+.card{background:#fbfcfe;border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:10px}
+.card h4{font-size:13px;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.tag{display:inline-block;border-radius:10px;padding:1px 8px;font-size:11px;color:#fff}
+.tag.done{background:var(--green)} .tag.doing{background:var(--blue)} .tag.back{background:var(--red)}
+.tag.wait{background:var(--gray)} .tag.layer1{background:#7e6bf0}.tag.layer2{background:#2b7de9}.tag.layer3{background:#f08c1e}
+.btn{border:none;border-radius:8px;padding:6px 14px;cursor:pointer;font-size:13px;color:#fff;background:var(--blue)}
+.btn.green{background:var(--green)} .btn.orange{background:var(--orange)} .btn.red{background:var(--red)} .btn.gray{background:#9aa5b4}
+.btn.sm{padding:3px 9px;font-size:12px;border-radius:6px}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+input,select,textarea{border:1px solid var(--line);border-radius:8px;padding:6px 8px;font-size:13px;width:100%;background:#fff;color:var(--ink);font-family:inherit}
+textarea{resize:vertical;min-height:54px}
+label.f{display:block;font-size:12px;color:#5b6675;margin:8px 0 3px}
+.row{display:flex;gap:8px}.row>*{flex:1;min-width:0}
+.stat3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px}
+.stat{border-radius:10px;padding:8px 6px;text-align:center;color:#fff}
+.stat b{display:block;font-size:17px}.stat span{font-size:11px;opacity:.95}
+.stat.s1{background:linear-gradient(135deg,#2b7de9,#5aa4f2)}
+.stat.s2{background:linear-gradient(135deg,#2fa866,#55c184)}
+.stat.s3{background:linear-gradient(135deg,#f08c1e,#f5b45e)}
+.pbar{margin-bottom:8px}
+.pbar .lab{display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px}
+.pbar .track{height:10px;background:#edf1f6;border-radius:6px;overflow:hidden}
+.pbar .fill{height:100%;border-radius:6px;transition:width .5s}
+.starcard{border-radius:10px;padding:8px 10px;color:#fff;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+.starcard .st{font-size:15px;letter-spacing:2px;color:#ffe37a}
+.sc-fam{background:linear-gradient(90deg,#2b7de9,#5aa4f2)}
+.sc-sch{background:linear-gradient(90deg,#2fa866,#55c184)}
+.sc-com{background:linear-gradient(90deg,#f08c1e,#f5b45e)}
+.starbox{border-radius:10px;padding:9px 6px;text-align:center}
+.sb-b{background:#eaf3fe}.sb-g{background:#e9f7ef}.sb-o{background:#fdf1e2}
+.sb-h{font-size:12px;margin-bottom:4px;color:#3a4657}
+.sb-s{font-size:14px}
+.remarks .rm{display:flex;gap:8px;margin-bottom:6px;font-size:12px;background:#f6f8fb;border-radius:8px;padding:6px 8px}
+.remarks .rm .ic{font-size:16px}
+.searchbar{display:flex;gap:6px;margin-bottom:10px}
+.searchbar input{flex:1}
+.searchbar select{width:110px;flex:none}
+.tcard{border:1px solid var(--line);border-radius:10px;padding:9px 11px;margin-bottom:8px;background:#fff}
+.tcard .tt{display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:4px}
+.tcard .tt b{font-size:13px}
+.tcard .meta{font-size:12px;color:#5b6675;display:flex;flex-wrap:wrap;gap:4px 12px;margin:3px 0}
+.tcard .cm{font-size:12px;background:#f6f8fb;border-radius:8px;padding:5px 8px;margin-top:5px;color:#4a5568}
+.stars{color:#f5a623;font-size:13px;letter-spacing:1px}
+.stars .off{color:#d9dee6}
+.empty{text-align:center;color:#9aa5b4;padding:22px 0;font-size:13px}
+.pager{display:flex;justify-content:center;align-items:center;gap:8px;margin:8px 0;font-size:12px;color:#5b6675}
+.pager button{border:1px solid var(--line);background:#fff;border-radius:6px;padding:2px 9px;cursor:pointer}
+.pager button:disabled{opacity:.4;cursor:not-allowed}
+.modal-mask{position:fixed;inset:0;background:rgba(20,30,50,.45);display:none;align-items:center;justify-content:center;z-index:50;padding:14px}
+.modal-mask.show{display:flex}
+.modal{background:#fff;border-radius:14px;max-width:640px;width:100%;max-height:86vh;overflow:auto;padding:16px 18px}
+.modal h3{font-size:15px;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.modal .close{float:right;cursor:pointer;border:none;background:none;font-size:18px;color:#8a94a3}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+@media(max-width:520px){.form-grid{grid-template-columns:1fr}}
+.imgrow{display:flex;gap:8px;overflow-x:auto;padding:4px 0}
+.imgrow .im{position:relative;flex:none}
+.imgrow img{width:110px;height:80px;object-fit:cover;border-radius:8px;border:1px solid var(--line);cursor:zoom-in;display:block}
+.imgrow .del{position:absolute;top:-6px;right:-6px;width:20px;height:20px;border-radius:50%;background:var(--red);color:#fff;border:none;cursor:pointer;font-size:12px;line-height:20px}
+.docbadge{width:110px;height:80px;border-radius:8px;border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:11px;background:#f4f7fb;text-align:center;padding:4px;word-break:break-all;cursor:pointer}
+#lightbox img{max-width:92vw;max-height:80vh;border-radius:10px}
+#lightbox{flex-direction:column;gap:10px}
+.toast{position:fixed;top:18px;left:50%;transform:translateX(-50%);background:#2b3442;color:#fff;border-radius:20px;padding:8px 20px;font-size:13px;z-index:99;display:none;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.toast.ok{background:var(--green)} .toast.warn{background:var(--orange)} .toast.err{background:var(--red)}
+.dims{font-size:12px}
+.dims table{width:100%;border-collapse:collapse}
+.dims td,.dims th{border:1px solid var(--line);padding:3px 6px;text-align:left}
+.dims th{background:#f2f5f9;font-weight:normal}
+.gA{color:var(--green);font-weight:bold}.gB{color:var(--blue);font-weight:bold}.gC{color:var(--orange);font-weight:bold}.gD{color:var(--red);font-weight:bold}
+.login-box{max-width:340px;margin:26px auto;text-align:center}
+.login-box .ic{font-size:40px}
+.login-box h3{margin:6px 0 14px;font-size:16px}
+.privacy-tip{background:#fff6e6;border:1px solid #f5d9a0;color:#8a6116;border-radius:8px;padding:8px 10px;font-size:12px;margin:8px 0;line-height:1.7}
+.footer-credit{display:flex;align-items:center;gap:9px;padding:10px 14px;border-top:1px solid var(--line);background:#fbfcfe}
+.footer-credit img{width:40px;height:40px;border-radius:50%;object-fit:cover}
+.footer-credit .t1{font-size:13px;font-weight:bold}
+.footer-credit .t2{font-size:11px;color:#8a94a3}
+.priv-must{display:flex;gap:6px;align-items:flex-start;font-size:12px;margin-top:6px}
+.priv-must input{width:auto;margin-top:2px}
+.mini{font-size:11px;color:#8a94a3}
+.ok-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:4px}
+hr.sep{border:none;border-top:1px dashed var(--line);margin:10px 0}
+.ai-box{background:#f0f6ff;border:1px dashed #9cc3f0;border-radius:8px;padding:8px 10px;font-size:12px;margin-top:6px;line-height:1.8}
+.filter-row{display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap}
+.filter-row select,.filter-row input{width:auto;min-width:90px;flex:1}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <img class="logo" src="校徽.jpg" alt="校徽">
+  <div>
+    <h1>AI赋能小学道德与法治·劳动教育家校社知行融合实践研究</h1>
+    <div class="sub">五育融合 · 知行合一</div>
+  </div>
+  <div class="badge">课题编号：2025ZJJYB044</div>
+</header>
+
+<div class="wrap">
+<div class="panels">
+
+<!-- ================= 家长端 ================= -->
+<section class="panel p-parent" id="panelParent">
+  <div class="panel-h"><span class="role-ic">👨‍👩‍👧</span>家长端<span class="mini" style="margin-left:auto;color:#fff">免注册 · 输入班级姓名进入</span></div>
+  <div id="parentLogin" class="panel-b">
+    <div class="login-box">
+      <div class="ic">🏫</div>
+      <h3>家长登录</h3>
+      <label class="f">学校名称</label>
+      <input id="pSchool" placeholder="请输入学校名称">
+      <label class="f">年级</label>
+      <select id="pGrade"></select>
+      <label class="f">班级</label>
+      <select id="pClass"></select>
+      <label class="f">学生姓名</label>
+      <input id="pName" placeholder="请输入学生姓名">
+      <div style="margin-top:14px"><button class="btn" style="width:100%" onclick="parentLogin()">进入家长端</button></div>
+    </div>
+  </div>
+  <div id="parentApp" style="display:none">
+    <div class="tabs" id="parentTabs">
+      <button class="on" data-t="home" onclick="pTab('home',this)">成长总览</button>
+      <button data-t="tasks" onclick="pTab('tasks',this)">劳动任务</button>
+      <button data-t="jobs" onclick="pTab('jobs',this)">社区岗位</button>
+      <button data-t="rec" onclick="pTab('rec',this)">服务留痕</button>
+      <button data-t="eval" onclick="pTab('eval',this)">评价</button>
+    </div>
+    <div class="panel-b" id="parentBody"></div>
+  </div>
+  <div class="footer-credit">
+    <img src="校徽.jpg" alt="校徽">
+    <div><div class="t1">湛江市第三十三小学</div><div class="t2">课题编号：2025ZJJYB044</div></div>
+  </div>
+</section>
+
+<!-- ================= 学校管理端 ================= -->
+<section class="panel p-school" id="panelSchool">
+  <div class="panel-h"><span class="role-ic">🏫</span>学校管理端<span class="mini" style="margin-left:auto;color:#fff">密码登录</span></div>
+  <div id="schoolLogin" class="panel-b">
+    <div class="login-box">
+      <div class="ic">🔐</div>
+      <h3>学校管理登录</h3>
+      <label class="f">管理密码</label>
+      <input id="sPwd" type="password" placeholder="请输入管理密码">
+      <div style="margin-top:14px"><button class="btn green" style="width:100%" onclick="schoolLogin()">进入学校管理端</button></div>
+    </div>
+  </div>
+  <div id="schoolApp" style="display:none">
+    <div class="tabs" id="schoolTabs">
+      <button class="on" data-t="pub" onclick="sTab('pub',this)">发布任务</button>
+      <button data-t="mgr" onclick="sTab('mgr',this)">任务管理</button>
+      <button data-t="ai" onclick="sTab('ai',this)">AI评价</button>
+      <button data-t="evm" onclick="sTab('evm',this)">评价管理</button>
+      <button data-t="fin" onclick="sTab('fin',this)">完成情况</button>
+      <button data-t="rec" onclick="sTab('rec',this)">服务记录</button>
+      <button data-t="rep" onclick="sTab('rep',this)">统计报表</button>
+      <button data-t="exp" onclick="sTab('exp',this)">导出总评</button>
+    </div>
+    <div class="panel-b" id="schoolBody"></div>
+  </div>
+  <div class="footer-credit">
+    <img src="校徽.jpg" alt="校徽">
+    <div><div class="t1">湛江市第三十三小学</div><div class="t2">课题编号：2025ZJJYB044</div></div>
+  </div>
+</section>
+
+<!-- ================= 社区端 ================= -->
+<section class="panel p-comm" id="panelComm">
+  <div class="panel-h"><span class="role-ic">🏘️</span>社区端<span class="mini" style="margin-left:auto;color:#fff">密码登录</span></div>
+  <div id="commLogin" class="panel-b">
+    <div class="login-box">
+      <div class="ic">🔐</div>
+      <h3>社区登录</h3>
+      <label class="f">社区密码</label>
+      <input id="cPwd" type="password" placeholder="请输入社区密码">
+      <div style="margin-top:14px"><button class="btn orange" style="width:100%" onclick="commLogin()">进入社区端</button></div>
+    </div>
+  </div>
+  <div id="commApp" style="display:none">
+    <div class="tabs" id="commTabs">
+      <button class="on" data-t="post" onclick="cTab('post',this)">发布岗位</button>
+      <button data-t="my" onclick="cTab('my',this)">我的岗位</button>
+      <button data-t="audit" onclick="cTab('audit',this)">报名审核</button>
+      <button data-t="up" onclick="cTab('up',this)">服务留痕</button>
+      <button data-t="cev" onclick="cTab('cev',this)">查看评价</button>
+    </div>
+    <div class="panel-b" id="commBody"></div>
+  </div>
+  <div class="footer-credit">
+    <img src="校徽.jpg" alt="校徽">
+    <div><div class="t1">湛江市第三十三小学</div><div class="t2">课题编号：2025ZJJYB044</div></div>
+  </div>
+</section>
+
+</div>
+</div>
+
+<!-- 弹窗 -->
+<div class="modal-mask" id="modal"><div class="modal" id="modalBox"></div></div>
+<div class="modal-mask" id="lightbox"><img id="lightboxImg" src="" alt="预览"><button class="btn sm" onclick="hide('lightbox')">关闭</button></div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ========================================================= 数据层（localStorage 渠道共享 / 多用户模式） */
+const DBKEY='ldjy_platform_v1';
+const DIMS14=['政治认同','道德修养','法治观念','健全人格','责任担当','劳动观念','劳动能力','劳动习惯与品质','劳动精神','协作沟通','创新实践','安全规范','服务成效','诚信真实'];
+const LAYERS=['课堂认知层','家庭实践层','社区服务层'];
+const GRADES=[1,2,3,4,5,6];
+const SAMPLE_IMGS=[
+ 'data:image/svg+xml;utf8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="320" height="220"><rect width="320" height="220" fill="#cfe8cf"/><rect y="150" width="320" height="70" fill="#9ccf9c"/><rect x="40" y="90" width="70" height="60" fill="#e8a24b"/><rect x="150" y="70" width="60" height="80" fill="#7fb3e0"/><circle cx="260" cy="60" r="24" fill="#f5d76e"/><text x="160" y="205" font-size="14" text-anchor="middle" fill="#3d6b3d">社区服务点环境示意</text></svg>'),
+ 'data:image/svg+xml;utf8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="320" height="220"><rect width="320" height="220" fill="#dceafc"/><rect y="140" width="320" height="80" fill="#b5d3f0"/><rect x="30" y="60" width="90" height="80" fill="#e9eef4"/><rect x="160" y="80" width="120" height="60" fill="#f5c98a"/><text x="160" y="205" font-size="14" text-anchor="middle" fill="#3a5a80">劳动实践场地示意</text></svg>')
+];
+function seed(){
+  return {
+    seq:100,
+    tasks:[
+      {id:'T101',name:'劳动最光荣——认识身边的劳动工具',grade:'1',cls:'全年级',layer:'课堂认知层',duration:40,deadline:'2026-10-30',desc:'在课堂上认识常见劳动工具，说一说它们的用途，树立"劳动最光荣"的观念。',status:'已发布',dims:null,createdAt:'2026-10-08'},
+      {id:'T102',name:'我是家庭小帮手——整理自己的小房间',grade:'3',cls:'3年级2班',layer:'家庭实践层',duration:30,deadline:'2026-10-25',desc:'独立整理床铺、书桌和玩具，拍照记录劳动前后对比（记得遮挡面部）。',status:'已发布',dims:null,createdAt:'2026-10-09'},
+      {id:'T103',name:'社区清洁我参与——捡拾垃圾分类投放',grade:'5',cls:'5年级3班',layer:'社区服务层',duration:60,deadline:'2026-11-05',desc:'在家长陪同下参与社区清洁，正确分类投放垃圾，记录服务时长。',status:'已发布',dims:null,createdAt:'2026-10-10'}
+    ],
+    jobs:[
+      {id:'J201',name:'社区图书角整理小管家',org:'霞山社区服务中心',address:'社区党群服务中心二楼图书角',time:'每周六 9:00-11:00',need:5,signed:2,fit:'3-5年级',type:'公益服务',skills:'会简单整理归类、认真细心',safety:'听从社区工作人员安排，不攀爬书架。',contact:'李阿姨 13800001234',deadline:'2026-10-24',status:'招募中',owner:'社区管理员',images:SAMPLE_IMGS.slice(0,2),createdAt:'2026-10-09'},
+      {id:'J202',name:'敬老院陪伴慰问小使者',org:'夕阳红敬老院',address:'人民大道南 68 号',time:'周日上午 9:30-11:00',need:8,signed:8,fit:'4-6年级',type:'志愿服务',skills:'主动打招呼、会表演小节目更佳',safety:'由家长接送，不在院内追逐打闹。',contact:'张叔叔 13800005678',deadline:'2026-10-20',status:'已满员',owner:'社区管理员',images:[],createdAt:'2026-10-09'}
+    ],
+    signups:[
+      {id:'S301',jobId:'J201',jobName:'社区图书角整理小管家',student:'王小明',cls:'3年级2班',status:'服务完成',createdAt:'2026-10-10'}
+    ],
+    records:[
+      {id:'R401',student:'王小明',cls:'3年级2班',school:'湛江市第三十三小学',taskName:'我是家庭小帮手——整理自己的小房间',layer:'家庭实践层',source:'task',taskId:'T102',duration:30,date:'2026-10-11',desc:'独立整理了床铺和书桌，把绘本分类放好。',media:[],status:'已确认',ai:null,uploader:'家长'},
+      {id:'R402',student:'王小明',cls:'3年级2班',school:'湛江市第三十三小学',taskName:'社区图书角整理小管家',layer:'社区服务层',source:'job',jobId:'J201',duration:120,date:'2026-10-12',desc:'周六上午在社区图书角帮忙整理绘本，按颜色分类摆放。',media:[],status:'已确认',ai:null,uploader:'社区'},
+      {id:'R403',student:'李小红',cls:'5年级3班',school:'湛江市第三十三小学',taskName:'社区清洁我参与——捡拾垃圾分类投放',layer:'社区服务层',source:'task',taskId:'T103',duration:60,date:'2026-10-11',desc:'和妈妈一起在小区花园捡拾垃圾并分类投放。',media:[],status:'待审核',ai:null,uploader:'家长'}
+    ],
+    evals:[
+      {id:'E501',recordId:'R401',role:'学生',stars:4,comment:'我把房间收拾得很整齐！',author:'王小明',createdAt:'2026-10-11'},
+      {id:'E502',recordId:'R401',role:'家长',stars:5,comment:'孩子独立完成整理，很有责任心，继续保持！',author:'王小明家长',createdAt:'2026-10-11'},
+      {id:'E503',recordId:'R401',role:'教师',stars:4,comment:'居家劳动习惯初步养成，建议下次尝试帮忙做简单饭菜。',author:'班主任',createdAt:'2026-10-12'},
+      {id:'E504',recordId:'R402',role:'社区',stars:5,comment:'认真负责，图书角焕然一新，感谢小管家的付出！',author:'社区管理员',createdAt:'2026-10-12'},
+      {id:'E505',recordId:'R402',role:'学生',stars:5,comment:'大家夸我摆得整齐，我很开心！',author:'王小明',createdAt:'2026-10-12'}
+    ]
+  };
+}
+/* ========================================================= 数据层（后端 API 持久化 + 实时同步）
+   设计要点：
+   - 服务端 data/db.json 为唯一权威数据库，跨设备/跨端共享，持久化落盘。
+   - 前端不再以 localStorage 为主数据源；仅在其作为「离线兜底」时读取。
+   - 任意数据变更后 save() 推送到后端，后端广播 SSE，所有在线端自动重渲染。 */
+let DB=null;
+let API_OK=true;
+let _saveTimer=null;
+
+async function apiGetDB(){
+  const r=await fetch('/api/db',{cache:'no-store'});
+  if(!r.ok) throw new Error('http '+r.status);
+  return await r.json();
+}
+async function apiPushDB(){
+  const r=await fetch('/api/db',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(DB)});
+  if(!r.ok) throw new Error('http '+r.status);
+  return r.json();
+}
+// 登录/进入各端时，把账号登记到云端 users 集合（便于跨设备识别同一账号）。失败不阻塞前端。
+async function apiLogin(payload){
+  try{
+    const r=await fetch('/api/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    return await r.json();
+  }catch(e){ return {ok:false}; }
+}
+function save(){
+  // 业务数据只落云端（CloudBase 云数据库）；前端不再写入 localStorage，避免账号/任务数据留在本机
+  if(_saveTimer) clearTimeout(_saveTimer);
+  _saveTimer=setTimeout(()=>{
+    apiPushDB().then(()=>setAPI(true)).catch(()=>setAPI(false));
+  },120);
+}
+async function load(){
+  try{
+    const d=await apiGetDB();
+    if(d && d.__needSeed){ DB=seed(); try{ await apiPushDB(); }catch(_){ } setAPI(true); }
+    else if(d && d.tasks){ DB=d; setAPI(true); }
+    else { DB=seed(); setAPI(true); }
+  }catch(e){
+    // 服务器不可达：仅内存兜底（不写 localStorage，避免业务数据落本地），并提示用户
+    DB=seed(); setAPI(false);
+  }
+  if(!DB.tasks) DB=seed();
+}
+function setAPI(ok){
+  if(API_OK===ok) return; API_OK=ok;
+  let b=document.getElementById('apiBar');
+  if(!b){ b=document.createElement('div'); b.id='apiBar'; b.style.cssText='position:fixed;top:0;left:0;right:0;z-index:9999;text-align:center;font-size:13px;padding:6px;'; document.body.appendChild(b); }
+  if(ok){ b.style.display='none'; }
+  else { b.style.display='block'; b.style.background='#fff3cd'; b.style.color='#856404'; b.style.borderBottom='1px solid #ffe69c'; b.textContent='⚠️ 暂时无法连接云端服务器，当前显示的是演示缓存数据。请确认 CloudBase 云托管服务已正常运行。'; }
+}
+// 登录/进入页面时，主动从后端拉取该账号对应的最新数据
+function refreshDB(cb){
+  apiGetDB().then(d=>{ if(d&&d.tasks){ DB=d; if(!DB.tasks)DB=seed(); setAPI(true);} }).catch(()=>{}).finally(()=>{ if(cb) cb(); });
+}
+// 实时同步：监听后端广播，任一端数据变更后本端自动重载并重渲染（无需手动刷新）
+function bindSync(){
+  if(typeof EventSource==='undefined') return;
+  const es=new EventSource('/api/events');
+  es.onmessage=ev=>{
+    try{ const m=JSON.parse(ev.data); if(m&&m.type==='changed'){ apiGetDB().then(d=>{ if(d&&d.tasks){ DB=d; if(!DB.tasks)DB=seed(); relayoutAll(); } }).catch(()=>{}); } }catch(_){}
+  };
+  es.onerror=()=>{ /* 浏览器会自动重连 */ };
+}
+
+/* 跨端实时同步：任一端数据变更后，重渲染所有“已登录/可见”的端面板。
+   三端共用同一内存 DB，但各自面板只在被渲染时刷新，因此必须主动重渲染。 */
+function relayoutAll(){
+  // 若某端面板内正有输入框聚焦（用户正在打字），不重渲染该端，避免清空已输入内容
+  const editing=(id)=>{ const el=document.activeElement; if(!el)return false; const b=$(id); if(!b||!b.contains(el))return false; const t=el.tagName; return t==='INPUT'||t==='TEXTAREA'||el.isContentEditable; };
+  if($('parentApp')&&$('parentApp').style.display!=='none'&&P.user&&!editing('parentBody')){
+    if(!P.tab)P.tab='home'; renderParent();
+  }
+  if($('schoolApp')&&$('schoolApp').style.display!=='none') renderSchool();
+  if($('commApp')&&$('commApp').style.display!=='none') renderComm();
+}
+function uid(p){ DB.seq++; return p+DB.seq; }
+
+/* ========================================================= 通用 UI */
+function $(id){return document.getElementById(id)}
+function show(id){$(id).classList.add('show')} function hide(id){$(id).classList.remove('show')}
+let toastTimer;
+function toast(msg,type){ const t=$('toast'); t.textContent=msg; t.className='toast show '+(type||''); clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.className='toast',2200); }
+function modal(html){ $('modalBox').innerHTML='<button class="close" onclick="hide(\'modal\')">✕</button>'+html; show('modal'); }
+function confirmBox(msg,onOk){ window._cfm=onOk; modal('<h3>⚠️ 删除确认</h3><p style="line-height:1.8">'+msg+'</p><div style="text-align:right;margin-top:14px"><button class="btn gray sm" onclick="hide(\'modal\')">取消</button> <button class="btn red sm" onclick="hide(\'modal\');window._cfm&&window._cfm()">确认删除</button></div>'); }
+function starsShow(n){ n=Math.round(n)||0; let s=''; for(let i=1;i<=5;i++) s+='<span class="'+(i<=n?'':'off')+'">★</span>'; return '<span class="stars">'+s+'</span>'; }
+function pagerHTML(page,total,per,fn){ const pages=Math.max(1,Math.ceil(total/per)); let h='<div class="pager"><button '+(page<=1?'disabled':'')+' onclick="'+fn+'('+(page-1)+')">上一页</button><span>第 '+page+' / '+pages+' 页 · 共 '+total+' 条</span><button '+(page>=pages?'disabled':'')+' onclick="'+fn+'('+(page+1)+')">下一页</button></div>'; return h; }
+function gradeOpts(sel){ let h='<option value="">全年级</option>'; GRADES.forEach(g=>h+='<option value="'+g+'"'+(sel==g?' selected':'')+'>'+g+'年级</option>'); return h; }
+function classOpts(sel){ let h='<option value="">全班级</option>'; for(let i=1;i<=5;i++) h+='<option value="'+i+'"'+(sel==i?' selected':'')+'>'+i+'班</option>'; return h; }
+function esc(s){ return (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function layerTag(l){ const c={'课堂认知层':'layer1','家庭实践层':'layer2','社区服务层':'layer3'}[l]||'wait'; return '<span class="tag '+c+'">'+esc(l)+'</span>'; }
+function statusTag(s){ const m={'已完成':'done','已确认':'done','进行中':'doing','待审核':'wait','已发布':'doing','已退回':'back','招募中':'doing','已满员':'wait','已通过':'doing','服务完成':'done'}; return '<span class="tag '+(m[s]||'wait')+'">'+esc(s)+'</span>'; }
+
+/* 雷达图（六边形 SVG · 带刻度与轴标签） */
+function radarSVG(vals){ // vals: [道德认知,行为表现,价值内化,家庭评价,学校评价,社区评价] 0-100
+  const cx=150,cy=130,R=92,N=6;
+  const pt=(i,r)=>{const a=-Math.PI/2+i*2*Math.PI/N;return [cx+r*Math.cos(a),cy+r*Math.sin(a)];};
+  let grid='';[0.25,0.5,0.75,1].forEach(k=>{let p='';for(let i=0;i<N;i++){const[x,y]=pt(i,R*k);p+=x.toFixed(1)+','+y.toFixed(1)+' ';}grid+='<polygon points="'+p+'" fill="'+(k===1?'#f6fbf8':'none')+'" stroke="#dfe6ee" stroke-width="1"/>';});
+  let axis='';for(let i=0;i<N;i++){const[x,y]=pt(i,R);axis+='<line x1="'+cx+'" y1="'+cy+'" x2="'+x+'" y2="'+y+'" stroke="#e3e9f0"/>';}
+  let ticks='<text x="'+(cx+7)+'" y="'+(cy-3)+'" font-size="9" fill="#b3bcc8">0</text>';
+  [25,50,75,100].forEach(v=>{const[x,y]=pt(1,R*v/100);ticks+='<text x="'+(x+9)+'" y="'+(y+3)+'" font-size="9" fill="#b3bcc8">'+v+'</text>';});
+  let poly='';for(let i=0;i<N;i++){const[x,y]=pt(i,R*Math.max(8,vals[i])/100);poly+=x.toFixed(1)+','+y.toFixed(1)+' ';}
+  let labs='';const names=['道德认知','行为表现','价值内化','家庭评价','学校评价','社区评价'];
+  for(let i=0;i<N;i++){const[x,y]=pt(i,R+18);labs+='<text x="'+x+'" y="'+(y+4)+'" font-size="11" text-anchor="middle" fill="#5b6675">'+names[i]+'</text>';}
+  return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 262" style="width:100%;max-width:330px;display:block;margin:0 auto">'+grid+axis+
+    '<polygon points="'+poly+'" fill="rgba(47,168,102,.30)" stroke="#2fa866" stroke-width="2"/>'+
+    vals.map((v,i)=>{const[x,y]=pt(i,R*Math.max(8,v)/100);return '<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="3" fill="#2fa866"/>';}).join('')+
+    labs+ticks+'</svg>';
+}
+/* 雷达图转 PNG（用于导出 Word 内嵌图片，含中文标签用 Blob URL 避免编码问题） */
+function radarPng(vals){
+  return new Promise(resolve=>{
+    const svgStr=radarSVG(vals).replace('<svg ','<svg width="600" height="524" ').replace(/style="[^"]*"/,'');
+    const blob=new Blob([svgStr],{type:'image/svg+xml;charset=utf-8'});
+    const url=URL.createObjectURL(blob);
+    const img=new Image();
+    img.onload=()=>{ const c=document.createElement('canvas');c.width=600;c.height=524;const ctx=c.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,600,524);ctx.drawImage(img,0,0,600,524);
+      try{resolve(c.toDataURL('image/png'));}catch(e){resolve('');} URL.revokeObjectURL(url); };
+    img.onerror=()=>{resolve('');URL.revokeObjectURL(url);};
+    img.src=url;
+  });
+}
+/* 学生素养画像卡（仿样图样式：头像+得分 / 三进度条 / 三星级卡 / 评语折叠 / 雷达图） */
+function radarCard(list,name,cls,key){
+  const c=catScores(list),s=threeStars(list);
+  const score=Math.round(radarVals(list).reduce((a,b)=>a+b,0)/6);
+  const bar=(lab,val,color)=>'<div class="pbar"><div class="lab"><span>'+lab+'</span><b style="color:'+color+'">'+Math.round(val)+' 分</b></div><div class="track"><div class="fill" style="width:'+Math.min(100,val)+'%;background:'+color+'"></div></div></div>';
+  const starBox=(bg,ic,lab,v)=>'<div class="starbox '+bg+'"><div class="sb-h">'+ic+' '+lab+'</div><div class="sb-s">'+(v==null?'<span class="mini">暂无</span>':'<span style="color:#f5a623">'+starsShow(v)+'</span>')+'</div></div>';
+  const rms=[['家庭','🏠'],['学校','🏫'],['社区','🏘️']].map(([r,ic])=>{
+    const es=DB.evals.filter(e=>list.some(x=>x.id===e.recordId)&&e.role===r&&e.comment);
+    const body=es.length?es.map(e=>'<div class="cm" style="margin:2px 0">· '+esc(e.comment)+'</div>').join(''):'<span class="mini">暂无评语</span>';
+    return '<div class="rm"><span class="ic">'+ic+'</span><div><b>'+r+'评语：</b>'+body+'</div></div>';
+  }).join('');
+  return '<div class="card" style="padding:14px">'+
+  '<div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">'+
+    '<div style="width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#2b7de9,#5aa4f2);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;flex:none">'+esc(name.slice(0,2))+'</div>'+
+    '<div style="flex:1;min-width:0"><div style="font-size:16px;font-weight:bold">'+esc(name)+'</div><div class="mini">'+esc(cls)+'　'+new Date().toISOString().slice(0,7)+'</div></div>'+
+    '<div style="text-align:right"><div style="font-size:26px;font-weight:bold;color:#2b7de9">'+score+'</div><div class="mini">综合得分</div></div></div>'+
+  bar('道德认知',c.道德认知,'#2fa866')+bar('行为表现',c.行为表现,'#2b7de9')+bar('价值内化',c.价值内化,'#f08c1e')+
+  '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0">'+starBox('sb-b','🏠','家庭',s.家庭)+starBox('sb-g','🏫','学校',s.学校)+starBox('sb-o','🏘️','社区',s.社区)+'</div>'+
+  '<div style="text-align:center;margin:4px 0"><button class="btn sm gray" onclick="toggleRm(\'rm_'+key+'\',this)">💬 展开评价详情</button></div>'+
+  '<div id="rm_'+key+'" class="remarks" style="display:none">'+rms+'</div>'+
+  radarSVG(radarVals(list))+'</div>';
+}
+function toggleRm(id,btn){ const d=$(id); const open=d.style.display==='none'; d.style.display=open?'block':'none'; btn.textContent=open?'💬 收起评价详情':'💬 展开评价详情'; }
+
+/* 星级输入 */
+let _starVals={};
+function starInput(key,def){ _starVals[key]=def||0; let h='<div class="stars" id="si_'+key+'" style="cursor:pointer;font-size:20px">'; for(let i=1;i<=5;i++) h+='<span onclick="setStar(\''+key+'\','+i+')" data-i="'+i+'">★</span>'; return h+'</div>'; }
+function setStar(k,v){ _starVals[k]=v; const box=$('si_'+k); [...box.children].forEach(sp=>{sp.className=(+sp.dataset.i<=v?'':'off');}); }
+
+/* ========================================================= 统计计算 */
+function recsOf(cls,name){ return DB.records.filter(r=>r.cls===cls&&(!name||r.student===name)); }
+function evalOf(recordId,role){ return DB.evals.find(e=>e.recordId===recordId&&e.role===role); }
+function avgStarsRole(list,role){ const st=list.map(r=>{const e=evalOf(r.id,role);return e?e.stars:null;}).filter(v=>v!=null); return st.length?st.reduce((a,b)=>a+b,0)/st.length:null; }
+function gradeVal(g){ return {A:95,B:80,C:65,D:48}[g]||60; }
+function catScores(list){ // 三项能力 0-100
+  const withAI=list.filter(r=>r.ai&&r.ai.dims);
+  if(!withAI.length) return {道德认知:60,行为表现:60,价值内化:60};
+  const pick=(names)=>{let s=0,n=0;withAI.forEach(r=>names.forEach(nm=>{const d=r.ai.dims.find(x=>x.name===nm);if(d){s+=gradeVal(d.grade);n++;}}));return n?Math.round(s/n):60;};
+  return {
+    道德认知:pick(['政治认同','道德修养','法治观念','健全人格','责任担当']),
+    行为表现:pick(['劳动观念','劳动能力','劳动习惯与品质','劳动精神','协作沟通','创新实践','安全规范']),
+    价值内化:pick(['服务成效','诚信真实'])
+  };
+}
+function bigStats(list){ // 总劳动时长 / 已完成 x/y / 平均自评分
+  const dur=list.reduce((a,r)=>a+(+r.duration||0),0);
+  const done=list.filter(r=>r.status==='已确认').length;
+  const self=avgStarsRole(list,'学生');
+  return {dur, done, total:list.length, self: self==null?null:self};
+}
+function threeStars(list){
+  return { 家庭:avgStarsRole(list,'家长'), 学校:avgStarsRole(list,'教师'), 社区:avgStarsRole(list,'社区') };
+}
+function radarVals(list){
+  const c=catScores(list), s=threeStars(list);
+  return [c.道德认知,c.行为表现,c.价值内化, (s.家庭??3)*20, (s.学校??3)*20, (s.社区??3)*20];
+}
+function latestRemark(list,role){ const es=DB.evals.filter(e=>list.some(r=>r.id===e.recordId)&&e.role===role&&e.comment); return es.length?es[es.length-1]:null; }
+
+/* ========================================================= 家长端 */
+const P={user:null,tab:'home',page:1,pJobsPage:1,q:'',layer:''};
+function initClassSelects(){
+  const g=$('pGrade'),c=$('pClass');
+  g.innerHTML=GRADES.map(x=>'<option value="'+x+'">'+x+'年级</option>').join('');
+  c.innerHTML=[1,2,3,4,5].map(x=>'<option value="'+x+'">'+x+'班</option>').join('');
+}
+function parentLogin(){
+  const name=$('pName').value.trim(), school=$('pSchool').value.trim();
+  if(!school){toast('请输入学校名称','warn');return;}
+  if(!name){toast('请输入学生姓名','warn');return;}
+  P.user={school,cls:$('pGrade').value+'年级'+$('pClass').value+'班',name};
+  $('parentLogin').style.display='none';$('parentApp').style.display='block';
+  apiLogin({role:'parent',school:P.user.school,grade:String($('pGrade').value),cls:P.user.cls,name:P.user.name}); // 账号落云端，跨设备一致（失败不阻塞）
+  toast('欢迎进入家长端','ok');
+  refreshDB(()=>{ pTab('home',document.querySelector('#parentTabs button')); }); // 进入即拉取最新云端数据
+}
+function pTab(t,btn){
+  P.tab=t;P.page=1;
+  document.querySelectorAll('#parentTabs button').forEach(b=>b.classList.toggle('on',b===btn));
+  renderParent();
+}
+function renderParent(){
+  const B=$('parentBody'); const u=P.user;
+  const list=recsOf(u.cls,u.name);
+  if(P.tab==='home') B.innerHTML=pHome(list);
+  else if(P.tab==='tasks') B.innerHTML=pTasks(list);
+  else if(P.tab==='jobs') B.innerHTML=pJobs();
+  else if(P.tab==='rec') B.innerHTML=pRec(list);
+  else if(P.tab==='eval') B.innerHTML=pEval(list);
+}
+/* 通用：评价查看/修改/删除（按各端权限调用） */
+function editEval(id){
+  const e=DB.evals.find(x=>x.id===id); if(!e)return;
+  const r=DB.records.find(x=>x.id===e.recordId);
+  modal('<h3>✏️ 修改评价（'+esc(e.role)+'）</h3>'+
+  (r?'<p class="mini">关联任务：'+esc(r.taskName)+' · '+esc(r.student)+'</p>':'')+
+  '<div style="margin:8px 0">'+starInput('ee',e.stars)+'</div>'+
+  '<textarea id="eeTx" placeholder="评语…">'+esc(e.comment)+'</textarea>'+
+  '<div style="text-align:right;margin-top:10px"><button class="btn sm" onclick="saveEvalEdit(\''+id+'\')">保存修改</button></div>');
+}
+function saveEvalEdit(id){
+  const e=DB.evals.find(x=>x.id===id); if(!e)return;
+  const stars=_starVals['ee']||0,c=$('eeTx').value.trim();
+  if(!stars){toast('请先打星','warn');return;} if(!c){toast('请填写评语','warn');return;}
+  e.stars=stars;e.comment=c;save();hide('modal');toast('评价修改成功','ok');
+  if(typeof P!=='undefined'&&P.user)renderParent(); if(typeof S!=='undefined')renderSchool(); if(typeof C!=='undefined')renderComm();
+}
+function delEval(id){
+  confirmBox('确定删除这条评价吗？删除后不可恢复。',()=>{
+    DB.evals=DB.evals.filter(x=>x.id!==id);save();toast('评价已删除','ok');
+    if(P.user)renderParent(); renderSchool(); renderComm();
+  });
+}
+/* 通用：服务记录编辑/删除（canStatus：学校端可改审核状态） */
+function editRec(id,canStatus){
+  const r=DB.records.find(x=>x.id===id); if(!r)return;
+  modal('<h3>✏️ 编辑服务记录</h3>'+
+  '<p class="mini">'+esc(r.student)+'（'+esc(r.cls)+'）· '+esc(r.taskName)+' · 上传人：'+esc(r.uploader)+'</p>'+
+  '<div class="row"><div><label class="f">劳动时长（分钟）</label><input id="erDur" type="number" min="5" value="'+r.duration+'"></div><div><label class="f">日期</label><input id="erDate" type="date" value="'+esc(r.date)+'"></div></div>'+
+  '<label class="f">劳动说明</label><textarea id="erDesc">'+esc(r.desc)+'</textarea>'+
+  (canStatus?'<label class="f">审核状态</label><select id="erStatus">'+['待审核','已确认','已退回'].map(s=>'<option'+(r.status===s?' selected':'')+'>'+s+'</option>').join('')+'</select>':'')+
+  '<div style="text-align:right;margin-top:10px"><button class="btn sm" onclick="saveRecEdit(\''+id+'\','+(canStatus?'true':'false')+')">保存修改</button></div>');
+}
+function saveRecEdit(id,canStatus){
+  const r=DB.records.find(x=>x.id===id); if(!r)return;
+  const dur=+$('erDur').value; if(!dur||dur<=0){toast('请填写有效时长','warn');return;}
+  const desc=$('erDesc').value.trim(); if(!desc){toast('请填写劳动说明','warn');return;}
+  r.duration=dur;r.date=$('erDate').value;r.desc=desc;
+  if(canStatus)r.status=$('erStatus').value;
+  save();hide('modal');toast('记录修改成功','ok');
+  if(P.user)renderParent(); renderSchool(); renderComm();
+}
+function delRec(id){
+  confirmBox('确定删除这条服务记录吗？关联的星级评价仍保留，记录删除后不可恢复。',()=>{
+    DB.records=DB.records.filter(x=>x.id!==id);save();toast('记录已删除','ok');
+    if(P.user)renderParent(); renderSchool(); renderComm();
+  });
+}
+function pHome(list){
+  const st=bigStats(list);
+  let h='<div class="card" style="background:var(--blue-bg);border-color:#bcd8f7"><b>👤 '+esc(P.user.name)+'</b><span class="mini">　'+esc(P.user.school)+' · '+esc(P.user.cls)+'</span> <button class="btn sm gray" style="float:right" onclick="parentLogout()">退出</button></div>';
+  h+='<div class="stat3">'+
+   '<div class="stat s1"><b>'+st.dur+'</b><span>总劳动时长(分钟)</span></div>'+
+   '<div class="stat s2"><b>'+st.done+'/'+st.total+'</b><span>已完成任务</span></div>'+
+   '<div class="stat s3"><b>'+(st.self==null?'—':st.self.toFixed(1))+'</b><span>平均自评分(/5.0)</span></div></div>';
+  h+=radarCard(list,P.user.name,P.user.cls,'parent');
+  return h;
+}
+function parentLogout(){ P.user=null;$('parentApp').style.display='none';$('parentLogin').style.display='block';$('pName').value=''; }
+function filterList(list){
+  return list.filter(r=>(!P.q||r.student.includes(P.q)||r.taskName.includes(P.q))&&(!P.layer||r.layer===P.layer));
+}
+function pTasks(list){
+  const myTasks=DB.tasks.filter(t=>t.status==='已发布'&&pClassMatch(t.cls,t.grade));
+  const myJobs=DB.jobs.filter(j=>(j.status==='招募中'||j.status==='已满员')&&pFitMatch(j.fit));
+  let h='<div class="searchbar"><input placeholder="搜索任务或岗位名称" value="'+esc(P.q)+'" oninput="P.q=this.value;P.page=1;renderParent()"><select onchange="P.layer=this.value;P.page=1;renderParent()"><option value="">全部层级</option>'+LAYERS.map(l=>'<option'+(P.layer===l?' selected':'')+'>'+l+'</option>').join('')+'</select></div>';
+  h+='<div class="card"><h4>📋 我的劳动任务（🏫 学校发布已同步 · 🏘️ 社区岗位 · 可操作）</h4>';
+  if(!myTasks.length&&!myJobs.length)h+='<div class="empty">暂无可操作任务</div>';
+  myTasks.filter(t=>!P.layer||t.layer===P.layer).filter(t=>!P.q||t.name.includes(P.q)).forEach(t=>{
+    const sub=DB.records.filter(r=>r.taskName===t.name&&r.student===P.user.name&&r.uploader==='家长');
+    const done=sub.some(r=>r.status==='已确认');
+    const canEval=sub.length>0;
+    h+='<div class="tcard"><div class="tt"><b>🏫 '+esc(t.name)+'</b>'+(done?'<span class="tag done">✅ 已完成</span>':(sub.length?'<span class="tag">⏳ 待审核</span>':statusTag(t.status)))+'</div>'+
+    '<div class="meta"><span>🏫 '+esc(P.user.school)+'</span><span>'+esc(t.cls)+'</span><span>'+layerTag(t.layer)+'</span><span>⏱ 建议 '+t.duration+' 分钟</span><span>📅 '+esc(t.deadline)+'</span></div>'+
+    '<div style="font-size:12px;color:#5b6675">'+esc(t.desc||'')+'</div>'+
+    (t.dims?'<div class="mini" style="margin-top:4px">🤖 AI已配置 '+t.dims.length+' 个评价维度与权重</div>':'')+
+    '<div style="margin-top:6px;display:flex;gap:6px;flex-wrap:wrap">'+
+      '<button class="btn sm" onclick="parentUploadModal(\''+t.id+'\')">⬆️ 上传服务记录</button>'+
+      (canEval?'<button class="btn sm green" onclick="parentEvalModal(\''+t.id+'\',\'task\')">⭐ 星级评价</button>':'<button class="btn sm green" disabled>⭐ 星级评价（先上传记录）</button>')+
+    '</div></div>';
+  });
+  myJobs.filter(j=>!P.q||j.name.includes(P.q)).forEach(j=>{
+    const canEval=DB.records.some(r=>r.taskName===j.name&&r.student===P.user.name);
+    h+='<div class="tcard"><div class="tt"><b>🏘️ '+esc(j.name)+'</b>'+statusTag(j.status)+'</div>'+
+    '<div class="meta"><span>🏢 '+esc(j.org)+'</span><span>🕐 '+esc(j.time)+'</span><span>适合 '+esc(j.fit)+'</span></div>'+
+    '<div class="meta"><span>👥 '+j.signed+'/'+j.need+'</span><span>📅 '+esc(j.deadline)+'</span></div>'+
+    '<div style="margin-top:6px;display:flex;gap:6px;flex-wrap:wrap">'+
+      (canEval?'<button class="btn sm green" onclick="parentEvalModal(\''+j.id+'\',\'job\')">⭐ 星级评价</button>':'<button class="btn sm green" disabled>⭐ 星级评价（先服务留痕）</button>')+
+      ' <button class="btn sm orange" onclick="jobDetail(\''+j.id+'\',true)">查看详情 / 报名</button></div></div>';
+  });
+  h+='</div>';
+  const fl=filterList(DB.records.filter(r=>r.student===P.user.name)), per=4, pg=fl.slice((P.page-1)*per,P.page*per);
+  h+='<div class="card"><h4>🗂️ 任务记录</h4>'+(pg.length?pg.map(taskCardHTML).join(''):'<div class="empty">暂无记录</div>')+pagerHTML(P.page,fl.length,per,'P.page')+'</div>';
+  return h;
+}
+/* 渲染一条记录的所有附件（图片可点开放大、视频可播放、文档可点开说明） */
+function mediaHTML(r){
+  if(!r.media||!r.media.length)return '';
+  return '<div class="imgrow" style="margin-top:6px">'+
+    r.media.map((m,i)=>'<div class="im">'+(m.kind==='img'?'<img src="'+m.url+'" onclick="mediaLightbox(\''+r.id+'\','+i+')">' : (m.kind==='video'?'<video src="'+m.url+'" controls preload="metadata" style="width:110px;height:80px;object-fit:cover;border-radius:8px"></video>' : '<div class="docbadge" onclick="mediaLightbox(\''+r.id+'\','+i+')">📄<br>'+esc((m.name||'文档').slice(0,10))+'</div>'))+'</div>').join('')+'</div>';
+}
+function mediaLightbox(rid,i){
+  const r=DB.records.find(x=>x.id===rid); if(!r||!r.media||!r.media[i])return;
+  const m=r.media[i];
+  if(m.kind==='img'){ $('lightboxImg').src=m.url; show('lightbox'); }
+  else if(m.kind==='video'){ modal('<h3>🎬 视频预览</h3><video src="'+m.url+'" controls style="max-width:100%;max-height:70vh"></video><div style="text-align:right;margin-top:8px"><button class="btn sm gray" onclick="hide(\'modal\')">关闭</button></div>'); }
+  else { modal('<h3>📄 文档预览</h3><p style="font-size:13px">'+esc(m.name||'文档')+'</p><p class="mini">本地预览环境无法直接打开文档，请下载后在 Word / PDF / WPS 等软件中查看。</p><div style="text-align:right"><button class="btn sm gray" onclick="hide(\'modal\')">关闭</button></div>'); }
+}
+function taskCardHTML(r){
+  const es=DB.evals.filter(e=>e.recordId===r.id&&e.comment);
+  let cm=''; es.forEach(e=>{cm+='<div class="cm">'+({'学生':'🧒自评','家长':'👨‍👩‍👧家长','教师':'🏫教师','社区':'🏘️社区'}[e.role]||e.role)+'：'+esc(e.comment)+'</div>';});
+  const ef=evalOf(r.id,'学生'),ep=evalOf(r.id,'家长'),et=evalOf(r.id,'教师');
+  const school=r.school?('🏫 '+esc(r.school)):'';
+  return '<div class="tcard"><div class="tt"><b>'+esc(r.student)+'</b><span>'+statusTag(r.status)+'</span></div>'+
+  '<div style="font-size:13px;margin-bottom:3px">'+esc(r.taskName)+'</div>'+
+  '<div class="meta"><span>'+school+'</span><span>'+(r.cls?esc(r.cls):'')+'</span><span>'+layerTag(r.layer)+'</span><span class="mini">上传：'+esc(r.uploader||'家长')+'</span></div>'+
+  '<div class="meta"><span>⏱ 劳动时长 '+r.duration+' 分钟</span><span>📅 '+esc(r.date)+'</span><span>🧒 自评 '+(ef?starsShow(ef.stars):'—')+'</span><span>👨‍👩‍👧 家长 '+(ep?starsShow(ep.stars):'—')+'</span><span>🏫 教师 '+(et?starsShow(et.stars):'—')+'</span></div>'+
+  (r.desc?'<div class="cm">'+esc(r.desc)+'</div>':'')+
+  mediaHTML(r)+cm+'</div>';
+}
+function pJobs(){
+  const jobs=DB.jobs.filter(j=>j.status==='招募中'||j.status==='已满员');
+  let h='<div class="card"><h4>🏘️ 社区发布岗位（学生自主选岗 · 可报名）</h4>';
+  if(!jobs.length)h+='<div class="empty">暂无在招岗位</div>';
+  jobs.forEach(j=>{
+    h+='<div class="tcard"><div class="tt"><b>'+esc(j.name)+'</b>'+statusTag(j.status)+'</div>'+
+    '<div class="meta"><span>🏢 '+esc(j.org)+'</span><span>🕐 '+esc(j.time)+'</span><span>适合 '+esc(j.fit)+'</span></div>'+
+    '<div class="meta"><span>👥 已报名 '+j.signed+'/'+j.need+' · 剩余 '+Math.max(0,j.need-j.signed)+'</span><span>📅 截止 '+esc(j.deadline)+'</span></div>'+
+    '<button class="btn sm orange" onclick="jobDetail(\''+j.id+'\',true)">查看详情 / 报名</button></div>';
+  });
+  h+='</div>';
+  const my=DB.signups.filter(s=>s.student===P.user.name&&s.cls===P.user.cls);
+  h+='<div class="card"><h4>📝 我的报名</h4>'+(my.length?my.map(s=>'<div class="tcard"><b>'+esc(s.jobName)+'</b> '+statusTag(s.status)+' <span class="mini">报名号 '+s.id+'</span></div>').join(''):'<div class="empty">还没有报名记录</div>')+'</div>';
+  return h;
+}
+function jobDetail(id,canApply){
+  const j=DB.jobs.find(x=>x.id===id); if(!j)return;
+  let h='<h3>🏘️ 岗位详情</h3>'+
+  '<div class="card"><b style="font-size:15px">'+esc(j.name)+'</b> '+statusTag(j.status)+
+  '<table class="dims" style="margin-top:8px">'+
+  '<tr><th>所属机构</th><td>'+esc(j.org)+'</td><th>地址</th><td>'+esc(j.address)+'</td></tr>'+
+  '<tr><th>服务时间</th><td>'+esc(j.time)+'</td><th>劳动类型</th><td>'+esc(j.type)+'</td></tr>'+
+  '<tr><th>所需人数</th><td>'+j.need+' 人（已报名 '+j.signed+'）</td><th>剩余名额</th><td>'+Math.max(0,j.need-j.signed)+'</td></tr>'+
+  '<tr><th>适合年级</th><td>'+esc(j.fit)+'</td><th>技能要求</th><td>'+esc(j.skills)+'</td></tr>'+
+  '<tr><th>联系人</th><td>'+esc(j.contact)+'</td><th>截止时间</th><td>'+esc(j.deadline)+'</td></tr>'+
+  '<tr><th>安全须知</th><td colspan="3">'+esc(j.safety)+'</td></tr></table></div>';
+  if(j.images&&j.images.length){
+    h+='<div class="card"><h4>📷 社区环境参考图片</h4><div class="imgrow">'+j.images.map((im,i)=>'<div class="im"><img src="'+im+'" onclick="lightbox(\''+id+'\','+i+')"></div>').join('')+'</div></div>';
+  } /* 无图片时该板块自动隐藏，不出现空白占位 */
+  if(canApply){
+    const full=j.signed>=j.need||j.status!=='招募中';
+    h+='<div style="text-align:center;margin-top:10px"><button class="btn orange" '+(full?'disabled':'')+' onclick="applyJob(\''+j.id+'\')">'+(full?'名额已满 / 已截止':'🤝 以 '+esc(P.user.name)+'（'+esc(P.user.cls)+'）身份报名')+'</button></div>';
+  }
+  modal(h);
+}
+function lightbox(id,i){ const j=DB.jobs.find(x=>x.id===id); $('lightboxImg').src=j.images[i]; show('lightbox'); }
+function applyJob(id){
+  const j=DB.jobs.find(x=>x.id===id);
+  if(DB.signups.some(s=>s.jobId===id&&s.student===P.user.name&&s.status!=='已拒绝')){toast('该岗位已报名，请勿重复报名','warn');return;}
+  DB.signups.push({id:uid('S'),jobId:id,jobName:j.name,student:P.user.name,cls:P.user.cls,status:'待审核',createdAt:new Date().toISOString().slice(0,10)});
+  j.signed++; if(j.signed>=j.need)j.status='已满员';
+  save();hide('modal');toast('报名成功，等待社区审核','ok');renderParent();
+}
+
+/* 服务留痕上传 */
+let _upMedia=[];
+function pRec(list){
+  const avTasks=DB.tasks.filter(t=>t.status==='已发布'&&pClassMatch(t.cls,t.grade)).map(t=>t.name);
+  const avJobs=DB.signups.filter(s=>s.student===P.user.name&&s.cls===P.user.cls&&s.status==='服务完成').map(s=>s.jobName);
+  let h='<div class="privacy-tip">🔒 <b>隐私保护提示：</b>上传劳动照片/视频前，请务必用<b>马赛克、贴纸</b>等方式遮挡孩子面部，只保留劳动场景与动作画面。影像仅用于本校道法与劳动融合课题的教学评价与教研存档，<b>禁止对外传播</b>。未遮挡面部的素材会被老师退回。</div>';
+  h+='<div class="card"><h4>⬆️ 上传服务记录</h4>'+
+  '<label class="f">关联任务 / 岗位</label><select id="upTask">'+(avTasks.concat(avJobs).map(n=>'<option>'+esc(n)+'</option>').join('')||'<option value="">（暂无可选任务）</option>')+'</select>'+
+  '<div class="row"><div><label class="f">劳动时长（分钟）</label><input id="upDur" type="number" min="5" value="30"></div><div><label class="f">日期</label><input id="upDate" type="date" value="'+new Date().toISOString().slice(0,10)+'"></div></div>'+
+  '<label class="f">劳动说明</label><textarea id="upDesc" placeholder="描述一下这次劳动做了什么…"></textarea>'+
+  '<label class="f">照片 / 视频 / 文档</label><input type="file" id="upFiles" multiple accept="image/*,video/*,.doc,.docx,.pdf" onchange="pickFiles(this)">'+
+  '<div class="imgrow" id="upPrev"></div>'+
+  '<div class="priv-must"><input type="checkbox" id="upMask"><span>我已确认：素材已遮挡未成年人面部，仅用于本校课题教学评价与教研存档。</span></div>'+
+  '<div style="text-align:center;margin-top:10px"><button class="btn" onclick="uploadRecord()">提交服务记录</button></div></div>';
+  h+='<div class="card"><h4>🗂️ 服务记录列表（本端上传 + 社区端上传）</h4>'+(list.length?list.map(taskCardHTML).join(''):'<div class="empty">暂无记录</div>')+'</div>';
+  return h;
+}
+function pickFiles(inp){
+  const files=[...inp.files]; if(!files.length)return;
+  files.forEach(f=>{
+    const kind=f.type.startsWith('image')?'img':(f.type.startsWith('video')?'video':'doc');
+    if(kind==='img'&&f.size<800*1024){
+      const rd=new FileReader(); rd.onload=e=>{_upMedia.push({kind,name:f.name,url:e.target.result});drawPrev();}; rd.readAsDataURL(f);
+    }else{
+      _upMedia.push({kind,name:f.name,url:URL.createObjectURL(f),temp:true}); drawPrev();
+    }
+  });
+  inp.value='';
+}
+function drawPrev(){
+  $('upPrev').innerHTML=_upMedia.map((m,i)=>'<div class="im">'+(m.kind==='img'?'<img src="'+m.url+'">':'<div style="width:110px;height:80px;border-radius:8px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;background:#f4f7fb;text-align:center;padding:4px;word-break:break-all">'+(m.kind==='video'?'🎬 ':'📄 ')+esc(m.name.slice(0,14))+'</div>')+'<button class="del" onclick="_upMedia.splice('+i+',1);drawPrev()">✕</button></div>').join('');
+}
+function uploadRecord(){
+  const tn=$('upTask').value; if(!tn){toast('暂无可关联的任务','warn');return;}
+  if(!$('upMask').checked){toast('请先勾选隐私确认：素材须遮挡面部','err');return;}
+  const desc=$('upDesc').value.trim(); if(!desc){toast('请填写劳动说明','warn');return;}
+  const dur=+$('upDur').value; if(!dur||dur<=0){toast('请填写有效劳动时长','warn');return;}
+  const isJob=DB.signups.some(s=>s.jobName===tn&&s.student===P.user.name);
+  DB.records.unshift({id:uid('R'),student:P.user.name,cls:P.user.cls,school:P.user.school,taskName:tn,layer:isJob?'社区服务层':(DB.tasks.find(t=>t.name===tn)||{}).layer||'家庭实践层',source:isJob?'job':'task',duration:dur,date:$('upDate').value,desc,media:_upMedia.slice(),status:'待审核',ai:null,uploader:'家长'});
+  _upMedia=[];save();toast('提交成功！等待教师审核','ok');P.page=1;renderParent();
+}
+
+/* 家长端：班级/年级匹配 + 任务操作弹窗（上传服务记录 / 星级评价） */
+function clsMatch(cls,grade,target){
+  if(!cls||!target)return false;
+  if(cls==='全年级'){ if(grade&&grade===target[0])return true; if(!grade)return true; return false; }
+  const full = cls.indexOf('年级')>=0 ? cls : (grade||'')+'年级'+cls;
+  return full===target;
+}
+function pClassMatch(cls,grade){ return clsMatch(cls,grade,P.user.cls); }
+function pFitMatch(fit){ if(!fit||fit==='不限')return true; const g=P.user.cls[0]; if(fit.endsWith('年级'))return fit[0]===g; const m=fit.match(/(\d+)\s*-\s*(\d+)年级?/); if(m)return +g>=+m[1]&&+g<=+m[2]; return true; }
+function findMyRecord(taskName,isJob){ return DB.records.find(r=>r.student===P.user.name&&r.taskName===taskName&&(isJob?r.source==='job':r.uploader==='家长'))||DB.records.find(r=>r.student===P.user.name&&r.taskName===taskName); }
+let _puMedia=[];
+function parentUploadModal(taskId){
+  const t=DB.tasks.find(x=>x.id===taskId); if(!t)return; _puMedia=[];
+  modal('<h3>⬆️ 上传服务记录</h3><p class="mini">关联任务：'+esc(t.name)+'（'+esc(t.cls)+'）</p>'+
+  '<div class="privacy-tip">🔒 请遮挡未成年人面部（马赛克/贴纸），仅保留劳动场景与动作；素材仅用于本校道法与劳动融合课题教研存档，禁止外传。</div>'+
+  '<div class="row"><div><label class="f">劳动时长（分钟）</label><input id="puDur" type="number" min="5" value="'+t.duration+'"></div><div><label class="f">日期</label><input id="puDate" type="date" value="'+new Date().toISOString().slice(0,10)+'"></div></div>'+
+  '<label class="f">劳动说明</label><textarea id="puDesc" placeholder="描述一下这次劳动做了什么…"></textarea>'+
+  '<label class="f">照片 / 视频 / 文档</label><input type="file" id="puFiles" multiple accept="image/*,video/*,.doc,.docx,.pdf" onchange="pickPuFiles(this)">'+
+  '<div class="imgrow" id="puPrev"></div>'+
+  '<div class="priv-must"><input type="checkbox" id="puMask"><span>我已确认：素材已遮挡未成年人面部，仅用于本校课题教学评价与教研存档。</span></div>'+
+  '<div style="text-align:center;margin-top:10px"><button class="btn" onclick="doParentUpload(\''+t.id+'\')">提交服务记录</button></div>');
+}
+function pickPuFiles(inp){ const files=[...inp.files]; if(!files.length)return; files.forEach(f=>{const kind=f.type.startsWith('image')?'img':(f.type.startsWith('video')?'video':'doc'); if(kind==='img'&&f.size<800*1024){const rd=new FileReader();rd.onload=e=>{_puMedia.push({kind,name:f.name,url:e.target.result});drawPuPrev();};rd.readAsDataURL(f);}else{_puMedia.push({kind,name:f.name,url:URL.createObjectURL(f),temp:true});drawPuPrev();}}); inp.value=''; }
+function drawPuPrev(){ const b=$('puPrev'); if(b)b.innerHTML=_puMedia.map((m,i)=>'<div class="im">'+(m.kind==='img'?'<img src="'+m.url+'">':'<div style="width:110px;height:80px;border-radius:8px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;background:#f4f7fb;text-align:center;padding:4px;word-break:break-all">'+(m.kind==='video'?'🎬 ':'📄 ')+esc(m.name.slice(0,14))+'</div>')+'<button class="del" onclick="_puMedia.splice('+i+',1);drawPuPrev()">✕</button></div>').join(''); }
+function doParentUpload(taskId){ if(!$('puMask').checked){toast('请先勾选隐私确认：素材须遮挡面部','err');return;} const desc=$('puDesc').value.trim(); if(!desc){toast('请填写劳动说明','warn');return;} const dur=+$('puDur').value; if(!dur||dur<=0){toast('请填写有效劳动时长','warn');return;} const t=DB.tasks.find(x=>x.id===taskId); if(!t){toast('任务不存在','err');return;} DB.records.unshift({id:uid('R'),student:P.user.name,cls:P.user.cls,taskName:t.name,layer:t.layer,duration:dur,date:$('puDate').value,desc,media:_puMedia.slice(),status:'待审核',ai:null,uploader:'家长',school:P.user.school,source:'task',taskId}); _puMedia=[];save();hide('modal');toast('提交成功！等待教师审核','ok');P.page=1;renderParent(); }
+function parentEvalModal(id,kind){
+  const name=(kind==='task'?(DB.tasks.find(t=>t.id===id)||{}).name:(DB.jobs.find(j=>j.id===id)||{}).name);
+  const rec=findMyRecord(name,kind==='job');
+  if(!rec){ modal('<h3>⭐ 星级评价</h3><p>'+esc(name||'')+'</p><div class="privacy-tip">请先上传服务记录并通过教师审核后，再进行学生自评与家长评价。</div><div style="text-align:right;margin-top:8px"><button class="btn sm gray" onclick="hide(\'modal\')">关闭</button></div>'); return; }
+  let h='<h3>⭐ 星级评价</h3><p class="mini">'+esc(name)+' · '+esc(rec.student)+'</p><div class="privacy-tip">⭐ 学生自评与家长评价由本端提交，评价结果家校社三方共享。</div>';
+  [['学生','🧒','pe_s_'+rec.id],['家长','👨‍👩‍👧','pe_p_'+rec.id]].forEach(([role,ic,key])=>{ const old=evalOf(rec.id,role); h+='<div style="border-top:1px dashed var(--line);padding-top:8px;margin-top:6px"><b style="font-size:12px">'+ic+' '+role+'评价</b> '+(old?'<span class="mini">已提交，可修改</span>':'')+'<div style="margin:4px 0">'+starInput(key,old?old.stars:0)+'</div><textarea id="tx_'+key+'" placeholder="写几句评语…">'+(old?esc(old.comment):'')+'</textarea><div style="text-align:right;margin-top:5px"><button class="btn sm" onclick="parentEval(\''+rec.id+'\',\''+role+'\',\''+key+'\')">'+(old?'修改评价':'提交评价')+'</button></div></div>'; });
+  modal(h);
+}
+
+/* 评价（学生自评 + 家长评价） */
+function pEval(list){
+  const rl=list.filter(r=>r.status==='已确认');
+  let h='<div class="privacy-tip">⭐ 评价规则：学生只能做自己的自评；家长只能提交家长评价；家长端仅可查看、修改、删除<b>在本端做出的</b>评价，不能修改他方评价。</div>';
+  if(rl.length){
+    h+='<div class="card"><h4>⭐ 提交评价</h4>';
+    rl.forEach(r=>{
+      h+='<div style="border-bottom:1px dashed var(--line);padding:8px 0;margin-bottom:4px"><b style="font-size:13px">'+esc(r.taskName)+'</b> <span class="mini">（'+esc(r.date)+'）</span>';
+      [['学生','🧒','pe_s_'+r.id],['家长','👨‍👩‍👧','pe_p_'+r.id]].forEach(([role,ic,key])=>{
+        const old=evalOf(r.id,role);
+        h+='<div style="border-top:1px dashed var(--line);padding-top:8px;margin-top:6px"><b style="font-size:12px">'+ic+' '+role+'评价</b> '+(old?'<span class="mini">已提交，可修改</span>':'')+
+        '<div style="margin:4px 0">'+starInput(key,old?old.stars:0)+'</div>'+
+        '<textarea id="tx_'+key+'" placeholder="写几句评语…">'+(old?esc(old.comment):'')+'</textarea>'+
+        '<div style="text-align:right;margin-top:5px"><button class="btn sm" onclick="parentEval(\''+r.id+'\',\''+role+'\',\''+key+'\')">'+(old?'修改评价':'提交评价')+'</button></div></div>';
+      });
+      h+='</div>';
+    });
+    h+='</div>';
+  }
+  // 星级评价列表：仅本端做出的学生自评与家长评价
+  const mine=DB.evals.filter(e=>(e.role==='学生'&&e.author===P.user.name)||(e.role==='家长'&&e.author===P.user.name+'家长'));
+  h+='<div class="card"><h4>🗂️ 我的星级评价列表（本端做出）</h4>'+(mine.length?'':'<div class="empty">本端还没有做出过评价</div>');
+  mine.forEach(e=>{
+    const r=DB.records.find(x=>x.id===e.recordId);
+    h+='<div class="tcard"><div class="tt"><b>'+({'学生':'🧒 学生自评','家长':'👨‍👩‍👧 家长评价'}[e.role])+'</b>'+starsShow(e.stars)+'</div>'+
+    (r?'<div class="mini">'+esc(r.taskName)+' · '+esc(r.student)+'</div>':'')+
+    '<div class="cm">'+esc(e.comment)+'</div><div class="mini">📅 '+esc(e.createdAt)+'</div>'+
+    '<div style="margin-top:6px"><button class="btn sm" onclick="editEval(\''+e.id+'\')">✏️ 修改</button> <button class="btn sm red" onclick="delEval(\''+e.id+'\')">🗑 删除</button></div></div>';
+  });
+  h+='</div>';
+  return h;
+}
+function parentEval(rid,role,key){
+  const stars=_starVals[key]||0, c=$('tx_'+key).value.trim();
+  if(!stars){toast('请先打星','warn');return;} if(!c){toast('请填写评语','warn');return;}
+  const old=evalOf(rid,role);
+  if(old){old.stars=stars;old.comment=c;old.createdAt=new Date().toISOString().slice(0,10);}
+  else DB.evals.push({id:uid('E'),recordId:rid,role,stars,comment:c,author:P.user.name+(role==='家长'?'家长':''),createdAt:new Date().toISOString().slice(0,10)});
+  save();toast('评价提交成功！','ok');hide('modal');renderParent();
+}
+
+/* ========================================================= 学校管理端 */
+const S={tab:'pub',page:1,aiPage:1,finPage:1,recsPage:1,q:'',layer:'',editId:null,finGrade:'',finCls:'',jobImgs:[]};
+function schoolLogin(){ if($('sPwd').value==='33x1234'){$('schoolLogin').style.display='none';$('schoolApp').style.display='block';toast('登录成功','ok');apiLogin({role:'school',password:$('sPwd').value});refreshDB(()=>{sTab('pub',document.querySelector('#schoolTabs button'));});} else toast('密码错误','err'); }
+function sTab(t,btn){ S.tab=t;S.page=1;S.aiPage=1;S.finPage=1;S.recsPage=1;
+  document.querySelectorAll('#schoolTabs button').forEach(b=>b.classList.toggle('on',b===btn));
+  renderSchool();
+}
+function renderSchool(){
+  const B=$('schoolBody');
+  if(S.tab==='pub')B.innerHTML=sPub();
+  else if(S.tab==='mgr')B.innerHTML=sMgr();
+  else if(S.tab==='ai')B.innerHTML=sAI();
+  else if(S.tab==='evm')B.innerHTML=sEvalsM();
+  else if(S.tab==='fin')B.innerHTML=sFin();
+  else if(S.tab==='rec')B.innerHTML=sRecs();
+  else if(S.tab==='rep')B.innerHTML=sRep();
+  else if(S.tab==='exp')B.innerHTML=sExp();
+}
+function sPub(){
+  const e=S.editId?DB.tasks.find(t=>t.id===S.editId):null; const curCls=e?(e.cls==='全年级'?'全年级':e.cls.replace(/^\d+年级/,'')):'';
+  let h='<div class="card"><h4>'+(e?'✏️ 编辑任务':'📢 发布劳动任务')+' <span class="mini">（同步至家长端）</span></h4>'+
+  '<label class="f">任务名称</label><input id="tName" value="'+(e?esc(e.name):'')+'" placeholder="如：我是家庭小帮手——整理小房间">'+
+  '<div class="row"><div><label class="f">年级</label><select id="tGrade" onchange="document.getElementById(\'tClsWrap\').style.display=this.value?\'block\':\'none\'">'+gradeOpts(e?e.grade:'')+'</select></div>'+
+  '<div><label class="f">班级</label><div id="tClsWrap" style="display:'+(e&&e.grade?'block':'none')+'"><select id="tCls"><option value="全年级"'+(curCls==='全年级'?' selected':'')+'>全年级</option>'+[1,2,3,4,5].map(i=>'<option value="'+i+'班"'+(curCls===i+'班'?' selected':'')+'>'+i+'班</option>').join('')+'</select></div></div></div>'+
+  '<div class="row"><div><label class="f">所属层级</label><select id="tLayer">'+LAYERS.map(l=>'<option'+(e&&e.layer===l?' selected':'')+'>'+l+'</option>').join('')+'</select></div>'+
+  '<div><label class="f">建议时长（分钟）</label><input id="tDur" type="number" min="5" value="'+(e?e.duration:40)+'"></div></div>'+
+  '<label class="f">截止时间</label><input id="tDl" type="date" value="'+(e?esc(e.deadline):'2026-11-30')+'">'+
+  '<label class="f">任务说明</label><textarea id="tDesc" placeholder="任务内容与要求…">'+(e?esc(e.desc||''):'')+'</textarea>'+
+  '<label class="f">发布人（选填）</label><input id="tPub" value="'+(e?esc(e.publisher||''):'')+'" placeholder="如：班主任李老师">'+
+  '<div style="text-align:center;margin-top:10px"><button class="btn green" onclick="saveTask()">'+(e?'保存修改':'发布任务')+'</button> '+(e?'<button class="btn gray sm" onclick="S.editId=null;renderSchool()">取消编辑</button>':'')+'</div></div>';
+  h+='<div class="ai-box">🤖 <b>AI评价维度配置：</b>发布后，AI 将依据任务内容与对应学段学生年龄特点，自动配置评价维度与权重（覆盖政治认同、道德修养、法治观念、健全人格、责任担当、劳动观念、劳动能力、劳动习惯与品质、劳动精神、协作沟通、创新实践、安全规范、服务成效、诚信真实，支持 A/B/C/D 等级）。</div>';
+  return h;
+}
+function saveTask(){
+  const name=$('tName').value.trim(); if(!name){toast('请填写任务名称','warn');return;}
+  const grade=$('tGrade').value; if(!grade){toast('请选择年级','warn');return;}
+  const rawCls=$('tClsWrap').style.display==='block'?$('tCls').value:'全年级'; const cls= rawCls==='全年级'?'全年级':(grade+'年级'+rawCls);
+  const dur=+$('tDur').value; if(!dur||dur<=0){toast('请填写有效建议时长','warn');return;}
+  if(S.editId){
+    const t=DB.tasks.find(x=>x.id===S.editId);
+    Object.assign(t,{name,grade,cls,layer:$('tLayer').value,duration:dur,deadline:$('tDl').value,desc:$('tDesc').value.trim(),publisher:$('tPub').value.trim()||'学校管理员'});
+    toast('任务已更新并同步家长端','ok');
+  }else{
+    const t={id:uid('T'),name,grade,cls,layer:$('tLayer').value,duration:dur,deadline:$('tDl').value,desc:$('tDesc').value.trim(),publisher:$('tPub').value.trim()||'学校管理员',status:'已发布',dims:null,createdAt:new Date().toISOString().slice(0,10)};
+    DB.tasks.unshift(t); aiDims(t); toast('任务发布成功！AI已生成评价维度与权重，并同步家长端','ok');
+  }
+  S.editId=null;save();relayoutAll();
+}
+function aiDims(t){ // AI 依据学段特点配置维度与权重
+  const low=+t.grade<=2, mid=+t.grade<=4;
+  let base;
+  if(t.layer==='课堂认知层') base=['政治认同','道德修养','劳动观念','劳动精神','责任担当'];
+  else if(t.layer==='家庭实践层') base=['劳动能力','劳动习惯与品质','责任担当','安全规范','诚信真实'];
+  else base=['劳动能力','协作沟通','创新实践','安全规范','服务成效','诚信真实'];
+  if(!low) base.push('法治观念'); if(mid&&!low) base.push('健全人格');
+  const w=[30,25,20,15,10,8,5].slice(0,base.length); const sum=w.reduce((a,b)=>a+b,0);
+  t.dims=base.map((n,i)=>({name:n,weight:Math.round(w[i]/sum*100)}));
+}
+function sMgr(){
+  const fl=DB.tasks.filter(t=>(!S.q||t.name.includes(S.q))&&(!S.layer||t.layer===S.layer));
+  const per=4,pg=fl.slice((S.page-1)*per,S.page*per);
+  let h='<div class="searchbar"><input placeholder="搜索任务名称" value="'+esc(S.q)+'" oninput="S.q=this.value;S.page=1;renderSchool()"><select onchange="S.layer=this.value;S.page=1;renderSchool()"><option value="">全部层级</option>'+LAYERS.map(l=>'<option'+(S.layer===l?' selected':'')+'>'+l+'</option>').join('')+'</select></div>';
+  h+='<div class="card"><h4>🗂️ 全部任务（学校管理员可增改删）</h4>'+(pg.length?'':'<div class="empty">暂无任务</div>');
+  pg.forEach(t=>{
+    const recs=DB.records.filter(r=>r.taskName===t.name);
+    h+='<div class="tcard"><div class="tt"><b>'+esc(t.name)+'</b>'+statusTag(t.status)+'</div>'+
+    '<div class="meta"><span>🏫 湛江市第三十三小学</span><span>'+esc(t.cls)+'</span><span>'+layerTag(t.layer)+'</span><span>⏱ '+t.duration+' 分钟</span><span>📅 截止 '+esc(t.deadline)+'</span><span>✅ '+recs.filter(r=>r.status==='已确认').length+'/'+recs.length+' 已交</span>'+(t.publisher?'<span>📝 发布人 '+esc(t.publisher)+'</span>':'')+'</div>'+
+    (t.dims?'<div class="mini">🤖 '+t.dims.map(d=>d.name+' '+d.weight+'%').join(' · ')+'</div>':'')+
+    '<div style="margin-top:6px"><button class="btn sm" onclick="editTask(\''+t.id+'\')">编辑</button> <button class="btn sm red" onclick="delTask(\''+t.id+'\')">删除</button></div></div>';
+  });
+  h+=pagerHTML(S.page,fl.length,per,'S.page')+'</div>';
+  return h;
+}
+function editTask(id){ S.editId=id; sTab('pub',document.querySelector('#schoolTabs button[data-t=pub]')); }
+function delTask(id){
+  const t=DB.tasks.find(x=>x.id===id);
+  confirmBox('确定删除任务【'+esc(t.name)+'】吗？删除后家长端将不再显示，且不可恢复。',()=>{
+    DB.tasks=DB.tasks.filter(x=>x.id!==id);save();toast('任务已删除','ok');relayoutAll();
+  });
+}
+function sAI(){
+  const fl=DB.records.filter(r=>(!S.q||r.student.includes(S.q)||r.taskName.includes(S.q))&&(!S.layer||r.layer===S.layer));
+  const per=4,pg=fl.slice((S.aiPage-1)*per,S.aiPage*per);
+  let h='<div class="privacy-tip">🤖 <b>AI 多模态评价原则：</b>只依据可见证据评价，不臆测；区分学生本人、同伴、家长、社区人员；识别安全风险、摆拍风险、重复上传与岗位无关内容；涉及未成年人隐私的信息已脱敏。</div>';
+  h+='<div class="searchbar"><input placeholder="搜索学生姓名或任务名称" value="'+esc(S.q)+'" oninput="S.q=this.value;S.aiPage=1;renderSchool()"><select onchange="S.layer=this.value;S.aiPage=1;renderSchool()"><option value="">全部层级</option>'+LAYERS.map(l=>'<option'+(S.layer===l?' selected':'')+'>'+l+'</option>').join('')+'</select></div>';
+  h+='<div class="card"><h4>🗂️ 学生任务记录</h4>'+(pg.length?pg.map(r=>aiCard(r)).join(''):'<div class="empty">暂无记录</div>')+pagerHTML(S.aiPage,fl.length,per,'S.aiPage')+'</div>';
+  return h;
+}
+function aiCard(r){
+  let h='<div class="tcard"><div class="tt"><b>'+esc(r.student)+'</b><span>'+esc(r.cls)+' </span>'+statusTag(r.status)+'</div>'+
+  '<div style="font-size:13px">'+esc(r.taskName)+'</div>'+
+  '<div class="meta"><span>⏱ '+r.duration+' 分钟</span><span>📅 '+esc(r.date)+'</span><span>'+layerTag(r.layer)+'</span><span class="mini">上传人：'+esc(r.uploader)+'</span>'+(r.school?'<span>🏫 '+esc(r.school)+'</span>':'')+'</div>';
+  if(r.media&&r.media.length) h+=mediaHTML(r);
+  if(r.ai){
+    h+='<div class="ai-box"><b>🤖 AI 评价结果</b> · 综合得分 <b style="color:#2fa866">'+r.ai.score+'</b> 分 · 等级 <b class="g'+r.ai.level+'">'+r.ai.level+'</b>'+
+    '<table class="dims" style="margin-top:5px"><tr>'+r.ai.dims.map(d=>'<td>'+esc(d.name)+' <b class="g'+d.grade+'">'+d.grade+'</b></td>').join('')+'</tr></table>'+
+    '<div style="margin-top:4px">👨‍👩‍👧 <b>家长版摘要：</b>'+esc(r.ai.sum.p)+'</div>'+
+    '<div>🏫 <b>学校版摘要：</b>'+esc(r.ai.sum.s)+'</div>'+
+    '<div>🏘️ <b>社区版摘要：</b>'+esc(r.ai.sum.c)+'</div></div>';
+    h+='<div style="margin-top:6px"><button class="btn sm gray" onclick="runAI(\''+r.id+'\',true)">重新评价</button></div>';
+  }else{
+    h+='<div style="margin-top:6px"><button class="btn sm green" onclick="runAI(\''+r.id+'\')">🤖 运行 AI 多模态评价</button></div>';
+  }
+  h+='<div style="margin-top:6px"><button class="btn sm" onclick="editRec(\''+r.id+'\',true)">✏️ 编辑记录</button> <button class="btn sm red" onclick="delRec(\''+r.id+'\')">🗑 删除记录</button></div>';
+  // 教师评价（可编辑自己的）
+  const old=evalOf(r.id,'教师');
+  const key='te_'+r.id;
+  h+='<div style="border-top:1px dashed var(--line);padding-top:8px;margin-top:6px"><b style="font-size:12px">🏫 教师评价</b>'+(old?' <span class="mini">已提交，可修改</span>':'')+
+  '<div style="margin:4px 0">'+starInput(key,old?old.stars:0)+'</div>'+
+  '<textarea id="tx_'+key+'" placeholder="教师评语…">'+(old?esc(old.comment):'')+'</textarea>'+
+  '<div style="text-align:right"><button class="btn sm green" onclick="teacherEval(\''+r.id+'\',\''+key+'\')">'+(old?'修改教师评价':'提交教师评价')+'</button></div></div>';
+  h+='</div>';
+  return h;
+}
+function runAI(id,redo){
+  const r=DB.records.find(x=>x.id===id);
+  const hasMedia=r.media&&r.media.length;
+  const ok=hasMedia?3:1, warn=(r.desc.length<15)?1:0; // 简化模拟：证据充分度
+  const g=k=>{const v=[['A','A','B'],['A','B','B'],['B','B','C'],['B','C','C']][Math.min(3,ok+warn)];return v[k%3];};
+  const dims=DIMS14.slice(0,8).map((n,i)=>({name:n,grade:g(i)}));
+  const score=Math.round(dims.reduce((a,d)=>a+gradeVal(d.grade),0)/dims.length);
+  const level=score>=90?'A':score>=80?'B':score>=60?'C':'D';
+  r.ai={score,level,dims,
+    sum:{p:'孩子完成了「'+r.taskName+'」'+r.duration+'分钟，AI 识别到劳动场景与动作清晰，可见证据充分，建议家长继续鼓励孩子独立完成类似任务。',
+         s:esc(r.student)+'同学在该项劳动中'+(warn?'描述较简略，':'表现稳定，')+'工具使用与安全规范符合要求，建议纳入班级劳动成长档案。',
+         c:'该学生在服务过程中遵守岗位安全须知，与在场人员协作良好，服务成效可见，社区予以认可。'},
+    aiAt:new Date().toISOString().slice(0,10)};
+  if(!hasMedia)r.ai.sum.s+='（注：未检测到影像证据，本次仅基于文字说明评价）';
+  save();toast('AI 多模态评价完成，结果已三方共享','ok');renderSchool();
+}
+function teacherEval(rid,key){
+  const stars=_starVals[key]||0,c=$('tx_'+key).value.trim();
+  if(!stars){toast('请先打星','warn');return;} if(!c){toast('请填写评语','warn');return;}
+  const old=evalOf(rid,'教师');
+  if(old){old.stars=stars;old.comment=c;} else DB.evals.push({id:uid('E'),recordId:rid,role:'教师',stars,comment:c,author:'班主任',createdAt:new Date().toISOString().slice(0,10)});
+  save();toast('教师评价已保存','ok');renderSchool();
+}
+function sEvalsM(){
+  const list=DB.evals.slice().reverse();
+  const per=5,pg=list.slice((S.page-1)*per,S.page*per);
+  let h='<div class="privacy-tip">🛡️ 权限说明：学校管理端可<b>查看、修改、删除全部评价</b>（学生自评、家长评价、教师评价、社区评价），并可将评价结果导出为综合素质总评。</div>';
+  h+='<div class="card"><h4>🗂️ 全部星级评价列表</h4>'+(pg.length?'':'<div class="empty">暂无评价</div>');
+  pg.forEach(e=>{
+    const r=DB.records.find(x=>x.id===e.recordId);
+    const ic={'学生':'🧒','家长':'👨‍👩‍👧','教师':'🏫','社区':'🏘️'}[e.role]||'⭐';
+    h+='<div class="tcard"><div class="tt"><b>'+ic+' '+esc(e.role)+'评价</b>'+starsShow(e.stars)+'</div>'+
+    (r?'<div class="mini">'+esc(r.taskName)+' · '+esc(r.student)+'（'+esc(r.cls)+'）</div>':'<div class="mini">记录已删除</div>')+
+    '<div class="cm">'+esc(e.comment)+'</div><div class="mini">评价人：'+esc(e.author)+' · 📅 '+esc(e.createdAt)+'</div>'+
+    '<div style="margin-top:6px"><button class="btn sm" onclick="editEval(\''+e.id+'\')">✏️ 修改</button> <button class="btn sm red" onclick="delEval(\''+e.id+'\')">🗑 删除</button></div></div>';
+  });
+  h+=pagerHTML(S.page,list.length,per,'S.page')+'</div>';
+  return h;
+}
+function sFin(){
+  let h='<div class="filter-row"><select onchange="S.finGrade=this.value;S.finPage=1;renderSchool()"><option value="">全部年级</option>'+GRADES.map(g=>'<option value="'+g+'"'+(S.finGrade==g?' selected':'')+'>'+g+'年级</option>').join('')+'</select>'+
+  '<select onchange="S.finCls=this.value;S.finPage=1;renderSchool()"><option value="">全部班级</option>'+[1,2,3,4,5].map(i=>'<option value="'+i+'"'+(S.finCls==i?' selected':'')+'>'+i+'班</option>').join('')+'</select></div>';
+  // 按学生汇总
+  const map={};
+  DB.records.forEach(r=>{
+    if(S.finGrade&&r.cls[0]!=S.finGrade)return;
+    if(S.finCls&&!r.cls.startsWith(S.finGrade+'年级'+S.finCls+'班')&&S.finGrade)return;
+    if(S.finCls&&!r.cls.endsWith(S.finCls+'班'))return;
+    const k=r.cls+'|'+r.student; (map[k]=map[k]||{cls:r.cls,name:r.student,list:[]}).list.push(r);
+  });
+  const students=Object.values(map),per=5,pg=students.slice((S.finPage-1)*per,S.finPage*per);
+  const allDur=DB.records.reduce((a,r)=>a+(+r.duration||0),0);
+  h+='<div class="card"><h4>👥 年级 / 班级完成情况</h4>'+
+    '<div class="mini" style="margin-bottom:6px">🏫 湛江市第三十三小学　·　全校累计劳动总时长 <b style="color:#2b7de9">'+allDur+'</b> 分钟</div>'+
+    (pg.length?'':'<div class="empty">暂无数据</div>');
+  pg.forEach((s,i)=>{
+    const st=bigStats(s.list);
+    h+='<div class="tcard"><div class="tt"><b>'+esc(s.name)+'</b><span class="mini">'+esc(s.cls)+'</span></div>'+
+    '<div class="meta"><span>⏱ 总时长 '+st.dur+' 分钟</span><span>✅ '+st.done+'/'+st.total+'</span><span>🧒 自评 '+(st.self==null?'—':st.self.toFixed(1))+'/5.0</span></div>'+
+    '<div style="margin-top:6px;display:flex;gap:6px;flex-wrap:wrap"><button class="btn sm green" onclick="showPortrait('+i+')">🕸️ 六维画像</button> <button class="btn sm" onclick="stuTasks(\''+esc(s.cls)+'\',\''+esc(s.name)+'\')">📋 各任务完成情况</button></div></div>';
+  });
+  h+=pagerHTML(S.finPage,students.length,per,'S.finPage')+'</div>';
+  window._finStudents=students;
+  return h;
+}
+function showPortrait(i){
+  const s=window._finStudents[i]; if(!s)return;
+  modal('<h3>🕸️ 学生六维素养画像</h3>'+radarCard(s.list,s.name,s.cls,'port'));
+}
+/* 学校端：查看某学生各任务的完成情况（学校发布任务 + 社区岗位报名） */
+function stuTasks(cls,name){
+  const tasks=DB.tasks.filter(t=>t.status==='已发布'&&clsMatch(t.cls,t.grade,cls));
+  const jobs=DB.signups.filter(s=>s.student===name&&s.cls===cls).map(s=>DB.jobs.find(j=>j.id===s.jobId)).filter(Boolean);
+  const doneTasks=tasks.filter(t=>DB.records.find(r=>r.student===name&&r.taskName===t.name&&r.uploader==='家长'&&r.status==='已确认'));
+  const doneJobs=jobs.filter(j=>DB.records.find(r=>r.student===name&&r.jobId===j.id&&r.status==='已确认'));
+  let h='<h3>📋 '+esc(name)+'（'+esc(cls)+'）各任务完成情况</h3>'+
+    '<div class="ai-box" style="margin-bottom:8px">🏫 湛江市第三十三小学　·　学校发布任务共 <b>'+tasks.length+'</b> 项，<b style="color:#2fa866">已完成 '+doneTasks.length+'</b> 项，<b style="color:#e07a1e">未完成 '+(tasks.length-doneTasks.length)+'</b> 项；社区岗位报名 <b>'+jobs.length+'</b> 项，已完成 <b style="color:#2fa866">'+doneJobs.length+'</b> 项。</div>'+
+    '<div class="card"><h4>🏫 学校发布任务</h4>'+(tasks.length?'':'<div class="empty">本班暂无学校发布任务</div>');
+  tasks.forEach(t=>{
+    const rec=DB.records.find(r=>r.student===name&&r.taskName===t.name&&r.uploader==='家长');
+    const done=rec&&rec.status==='已确认';
+    const stt=done?'已完成':(rec?'待审核':'未完成');
+    h+='<div class="tcard"><div class="tt"><b>'+esc(t.name)+'</b>'+(done?'<span class="tag done">✅ 已完成</span>':(rec?'<span class="tag">⏳ 待审核</span>':'<span class="tag warn">⚪ 未完成</span>'))+'</div>'+
+    '<div class="meta"><span>'+esc(t.cls)+'</span><span>'+layerTag(t.layer)+'</span><span>⏱ '+t.duration+' 分钟</span></div>'+
+    (rec&&rec.media&&rec.media.length?'<div class="mini">📎 已上传 '+rec.media.length+' 个附件</div>':'<div class="mini">尚未上传服务记录</div>')+'</div>';
+  });
+  h+='</div><div class="card"><h4>🏘️ 社区岗位报名</h4>'+(jobs.length?'':'<div class="empty">未报名社区岗位</div>');
+  jobs.forEach(j=>{
+    const rec=DB.records.find(r=>r.student===name&&r.jobId===j.id);
+    const stt=rec?rec.status:'未提交';
+    h+='<div class="tcard"><div class="tt"><b>'+esc(j.name)+'</b>'+statusTag(stt)+'</div><div class="meta"><span>🏢 '+esc(j.org)+'</span><span>适合 '+esc(j.fit)+'</span></div></div>';
+  });
+  h+='</div><div style="text-align:right;margin-top:8px"><button class="btn sm gray" onclick="hide(\'modal\')">关闭</button></div>';
+  modal(h);
+}
+function sRep(){
+  const total=DB.records.length,done=DB.records.filter(r=>r.status==='已确认').length;
+  const byLayer=LAYERS.map(l=>({l,n:DB.records.filter(r=>r.layer===l).length}));
+  const byGrade=GRADES.map(g=>({g,n:DB.records.filter(r=>r.cls[0]==g).length}));
+  let h='<div class="card"><h4>📈 全校统计报表</h4>'+
+  '<div class="stat3"><div class="stat s1"><b>'+total+'</b><span>记录总数</span></div><div class="stat s2"><b>'+done+'</b><span>已确认</span></div><div class="stat s3"><b>'+DB.evals.length+'</b><span>评价条数</span></div></div>';
+  h+='<div class="dims"><table><tr><th>层级</th><th>记录数</th></tr>'+byLayer.map(x=>'<tr><td>'+x.l+'</td><td>'+x.n+'</td></tr>').join('')+'</table></div>';
+  h+='<div class="dims" style="margin-top:8px"><table><tr><th>年级</th>'+byGrade.map(x=>'<th>'+x.g+'年级</th>').join('')+'</tr><tr><td>记录数</td>'+byGrade.map(x=>'<td>'+x.n+'</td>').join('')+'</tr></table></div></div>';
+  h+='<div class="ai-box">🔒 隐私说明：报表与评价涉及未成年人隐私的信息已脱敏，仅供本校课题教研使用。</div>';
+  return h;
+}
+/* 学校端：服务记录列表（家长端 + 社区端同步上传），可查看/修改/删除 */
+function sRecs(){
+  const fl=DB.records.filter(r=>(!S.q||r.student.includes(S.q)||r.taskName.includes(S.q))&&(!S.layer||r.layer===S.layer));
+  const per=5,pg=fl.slice((S.recsPage-1)*per,S.recsPage*per);
+  let h='<div class="privacy-tip">🗂️ 此处汇总<b>家长端与社区端同步上传的全部服务记录</b>，学校管理员可查看、修改（含审核状态）与删除。涉及未成年人隐私的影像仅用于本校课题教研。</div>';
+  h+='<div class="searchbar"><input placeholder="搜索学生姓名或任务名称" value="'+esc(S.q)+'" oninput="S.q=this.value;S.recsPage=1;renderSchool()"><select onchange="S.layer=this.value;S.recsPage=1;renderSchool()"><option value="">全部层级</option>'+LAYERS.map(l=>'<option'+(S.layer===l?' selected':'')+'>'+l+'</option>').join('')+'</select></div>';
+  h+='<div class="card"><h4>🗂️ 服务记录列表（家长端 + 社区端同步）</h4>'+(pg.length?pg.map(r=>{
+    let c='<div class="tcard"><div class="tt"><b>'+esc(r.student)+'</b><span>'+esc(r.cls)+'</span>'+statusTag(r.status)+'</div>'+
+      '<div style="font-size:13px">'+esc(r.taskName)+'</div>'+
+      '<div class="meta"><span>'+layerTag(r.layer)+'</span><span>⏱ '+r.duration+' 分钟</span><span>📅 '+esc(r.date)+'</span><span>上传：'+esc(r.uploader)+'</span>'+(r.school?'<span>🏫 '+esc(r.school)+'</span>':'')+'</div>';
+    if(r.desc)c+='<div class="cm">'+esc(r.desc)+'</div>';
+    c+=mediaHTML(r);
+    c+='<div style="margin-top:6px"><button class="btn sm" onclick="editRec(\''+r.id+'\',true)">✏️ 编辑/审核</button> <button class="btn sm red" onclick="delRec(\''+r.id+'\')">🗑 删除</button></div></div>';
+    return c;
+  }).join(''):'<div class="empty">暂无服务记录</div>')+pagerHTML(S.recsPage,fl.length,per,'S.recsPage')+'</div>';
+  return h;
+}
+function sExp(){
+  let h='<div class="card"><h4>📤 导出综合素质总评</h4>'+
+  '<p style="font-size:12px;color:#5b6675;line-height:1.8">按 AI 配置的权重，将学校评价、家庭评价、社区评价汇总为综合素质评价，生成等级、分数、雷达图、评语和成长档案，以 Word 文档形式整理导出归档。</p>'+
+  '<div style="text-align:center;margin-top:10px"><button class="btn green" onclick="exportAll()">📄 一键导出全部学生综合素质总评（Word 文档）</button></div></div>';
+  return h;
+}
+function buildStudentReport(name,cls,list,png){
+  const st=bigStats(list),c=catScores(list),s=threeStars(list);
+  const score=Math.round(radarVals(list).reduce((a,b)=>a+b,0)/6);
+  const level=score>=90?'A（优秀）':score>=80?'B（良好）':score>=60?'C（合格）':'D（待改进）';
+  const rm=r=>{const e=latestRemark(list,r);return e?esc(e.comment):'——';};
+  const aiRecs=list.filter(r=>r.ai);
+  let dimRows=''; DIMS14.forEach(n=>{
+    const grades=aiRecs.map(r=>{const d=r.ai.dims.find(x=>x.name===n);return d?d.grade:null;}).filter(Boolean);
+    const g=grades.length?grades[grades.length-1]:'—';
+    dimRows+='<tr><td>'+n+'</td><td class="g'+(g==='—'?'':g)+'">'+g+'</td></tr>';
+  });
+  return '<div style="page-break-after:always">'+
+  '<h2 style="text-align:center">学生综合素质总评（劳动教育 · 家校社协同）</h2>'+
+  '<p style="text-align:center;color:#666">湛江市第三十三小学 · 课题编号：2025ZJJYB044</p><hr>'+
+  '<p><b>姓名：</b>'+esc(name)+'　<b>班级：</b>'+esc(cls)+'　<b>导出日期：</b>'+new Date().toISOString().slice(0,10)+'</p>'+
+  '<p><b>总劳动时长：</b>'+st.dur+' 分钟　<b>完成任务：</b>'+st.done+'/'+st.total+'　<b>平均自评分：</b>'+(st.self==null?'—':st.self.toFixed(1))+'/5.0</p>'+
+  '<h3>一、素养维度</h3><p>道德认知：'+c.道德认知+' 分｜行为表现：'+c.行为表现+' 分｜价值内化：'+c.价值内化+' 分</p>'+
+  '<h3>二、三方星级评价</h3><p>家庭：'+(s.家庭==null?'—':s.家庭.toFixed(1))+' 星｜学校：'+(s.学校==null?'—':s.学校.toFixed(1))+' 星｜社区：'+(s.社区==null?'—':s.社区.toFixed(1))+' 星</p>'+
+  '<h3>三、AI 评价维度等级（A/B/C/D）</h3><table border="1" cellpadding="4" style="border-collapse:collapse">'+dimRows+'</table>'+
+  '<h3>四、三方评语</h3><p><b>家庭评语：</b>'+rm('家庭')+'</p><p><b>学校评语：</b>'+rm('学校')+'</p><p><b>社区评语：</b>'+rm('社区')+'</p>'+
+  '<h3>五、综合素质等级</h3><p style="font-size:16px"><b>综合得分：'+score+' 分 · 等级：'+level+'</b></p>'+
+  '<h3>六、六维素养评价雷达图</h3>'+
+  '<p>道德认知：'+Math.round(radarVals(list)[0])+' ｜ 行为表现：'+Math.round(radarVals(list)[1])+' ｜ 价值内化：'+Math.round(radarVals(list)[2])+'<br>家庭评价：'+Math.round(radarVals(list)[3])+' ｜ 学校评价：'+Math.round(radarVals(list)[4])+' ｜ 社区评价：'+Math.round(radarVals(list)[5])+'</p>'+
+  (png?'<div style="text-align:center"><img src="'+png+'" width="420" alt="六维素养雷达图"></div>':'<p class="mini">（雷达图生成失败，已以数值呈现）</p>')+
+  '<p style="color:#888;font-size:11px">🔒 本档案涉及未成年人隐私，仅用于本校道法与劳动融合课题教学评价与教研存档，禁止外传。</p></div>';
+}
+async function exportAll(){
+  const map={};
+  DB.records.forEach(r=>{const k=r.cls+'|'+r.student;(map[k]=map[k]||{cls:r.cls,name:r.student,list:[]}).list.push(r);});
+  const students=Object.values(map);
+  if(!students.length){toast('暂无学生数据可导出','warn');return;}
+  toast('正在生成报告（含六维雷达图）…','ok');
+  const reports=[];
+  for(const s of students){
+    const png=await radarPng(radarVals(s.list));
+    reports.push(buildStudentReport(s.name,s.cls,s.list,png));
+  }
+  const html='<html xmlns:w="urn:schemas-microsoft-com:office:word"><head><meta charset="utf-8"><style>body{font-family:"Microsoft YaHei";font-size:12pt}</style></head><body>'+
+    reports.join('')+'</body></html>';
+  const blob=new Blob(['\ufeff'+html],{type:'application/msword'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='综合素质总评_'+new Date().toISOString().slice(0,10)+'.doc';
+  a.click();
+  toast('已导出 '+students.length+' 名学生的综合素质总评文档（含六维雷达图）','ok');
+}
+
+/* ========================================================= 社区端 */
+const C={tab:'post',page:1,auditPage:1,evPage:1,editJobId:null,jobImgs:[]};
+function commLogin(){ if($('cPwd').value==='33x1234'){$('commLogin').style.display='none';$('commApp').style.display='block';toast('登录成功','ok');apiLogin({role:'community',password:$('cPwd').value});refreshDB(()=>{cTab('post',document.querySelector('#commTabs button'));});} else toast('密码错误','err'); }
+function cTab(t,btn){ C.tab=t;C.page=1;C.auditPage=1;C.evPage=1;
+  document.querySelectorAll('#commTabs button').forEach(b=>b.classList.toggle('on',b===btn));
+  renderComm();
+}
+function renderComm(){
+  const B=$('commBody');
+  if(C.tab==='post')B.innerHTML=cPost();
+  else if(C.tab==='my')B.innerHTML=cMy();
+  else if(C.tab==='audit')B.innerHTML=cAudit();
+  else if(C.tab==='up')B.innerHTML=cUp();
+  else if(C.tab==='cev')B.innerHTML=cEv();
+}
+const OWNER='社区管理员';
+const TIME_OPTS=['周一至周五 课后 16:30-17:30','周六上午 9:00-11:00','周六下午 14:30-16:30','周日上午 9:30-11:00','周日下午 14:30-16:30','节假日全天（分时段）'];
+function timeOpts(cur){
+  let o=TIME_OPTS.map(t=>'<option'+(t===cur?' selected':'')+'>'+t+'</option>').join('');
+  if(cur&&!TIME_OPTS.includes(cur))o='<option selected>'+esc(cur)+'</option>'+o;
+  return o;
+}
+function fitOpts(cur){
+  let o='<option value="不限"'+(cur==='不限'?' selected':'')+'>不限</option>'+GRADES.map(g=>'<option value="'+g+'年级"'+(cur===g+'年级'?' selected':'')+'>'+g+'年级</option>').join('');
+  if(cur&&!['不限'].includes(cur)&&!GRADES.some(g=>cur===g+'年级'))o='<option selected>'+esc(cur)+'</option>'+o;
+  return o;
+}
+function cPost(){
+  const e=C.editJobId?DB.jobs.find(j=>j.id===C.editJobId):null;
+  let h='<div class="card"><h4>'+(e?'✏️ 编辑岗位':'📢 发布空余岗位')+' <span class="mini">（同步至家长端）</span></h4>'+
+  '<label class="f">岗位名称</label><input id="jName" value="'+(e?esc(e.name):'')+'">'+
+  '<div class="row"><div><label class="f">所属机构</label><input id="jOrg" value="'+(e?esc(e.org):'')+'"></div><div><label class="f">地址</label><input id="jAddr" value="'+(e?esc(e.address):'')+'"></div></div>'+
+  '<div class="row"><div><label class="f">服务时间</label><select id="jTime">'+timeOpts(e?e.time:'')+'</select></div><div><label class="f">劳动类型</label><input id="jType" value="'+(e?esc(e.type):'')+'" placeholder="如：公益服务"></div></div>'+
+  '<div class="row"><div><label class="f">所需人数</label><input id="jNeed" type="number" min="1" value="'+(e?e.need:5)+'"></div><div><label class="f">适合年级</label><select id="jFit">'+fitOpts(e?e.fit:'')+'</select></div></div>'+
+  '<label class="f">技能要求</label><input id="jSkill" value="'+(e?esc(e.skills):'')+'">'+
+  '<label class="f">安全须知</label><textarea id="jSafe">'+(e?esc(e.safety):'')+'</textarea>'+
+  '<div class="row"><div><label class="f">联系人</label><input id="jContact" value="'+(e?esc(e.contact):'')+'"></div><div><label class="f">截止时间</label><input id="jDl" type="date" value="'+(e?esc(e.deadline):'2026-11-30')+'"></div></div>'+
+  '<label class="f">📷 社区环境参考图片（选填，支持多张，随岗位保存）</label><input type="file" id="jImgs" multiple accept="image/*" onchange="pickJobImgs(this)">'+
+  '<div class="imgrow" id="jPrev"></div>'+
+  '<div style="text-align:center;margin-top:10px"><button class="btn orange" onclick="saveJob()">'+(e?'保存修改':'发布岗位')+'</button> '+(e?'<button class="btn gray sm" onclick="C.editJobId=null;renderComm()">取消编辑</button>':'')+'</div></div>';
+  return h;
+}
+function pickJobImgs(inp){
+  [...inp.files].forEach(f=>{
+    if(!f.type.startsWith('image'))return;
+    const rd=new FileReader(); rd.onload=ev=>{C.jobImgs.push(ev.target.result);drawJobPrev();}; rd.readAsDataURL(f);
+  }); inp.value='';
+}
+function drawJobPrev(){
+  const box=$('jPrev'); if(!box)return;
+  box.innerHTML=C.jobImgs.map((u,i)=>'<div class="im"><img src="'+u+'"><button class="del" onclick="C.jobImgs.splice('+i+',1);drawJobPrev()">✕</button></div>').join('');
+}
+function saveJob(){
+  const name=$('jName').value.trim(); if(!name){toast('请填写岗位名称','warn');return;}
+  const need=+$('jNeed').value; if(!need||need<1){toast('请填写有效所需人数','warn');return;}
+  const data={name,org:$('jOrg').value.trim(),address:$('jAddr').value.trim(),time:$('jTime').value.trim(),type:$('jType').value.trim(),fit:$('jFit').value.trim()||'不限',skills:$('jSkill').value.trim(),safety:$('jSafe').value.trim(),contact:$('jContact').value.trim(),deadline:$('jDl').value};
+  if(C.editJobId){
+    const j=DB.jobs.find(x=>x.id===C.editJobId);
+    Object.assign(j,data,{images:C.jobImgs.slice()});
+    if(j.signed>=j.need)j.status='已满员'; else if(j.status==='已满员')j.status='招募中';
+    toast('岗位已修改并同步家长端','ok');
+  }else{
+    DB.jobs.unshift({id:uid('J'),...data,need,signed:0,status:'招募中',owner:OWNER,images:C.jobImgs.slice(),createdAt:new Date().toISOString().slice(0,10)});
+    toast('岗位发布成功，已同步家长端','ok');
+  }
+  C.editJobId=null;C.jobImgs=[];save();renderComm();
+}
+function cMy(){
+  const mine=DB.jobs.filter(j=>j.owner===OWNER);
+  const per=4,pg=mine.slice((C.page-1)*per,C.page*per);
+  let h='<div class="privacy-tip">🧑‍💼 权限说明：社区人员只能新增、修改、删除<b>自己发布</b>的岗位。</div>';
+  h+='<div class="card"><h4>🏘️ 我发布的岗位</h4>'+(pg.length?'':'<div class="empty">还没有发布过岗位</div>');
+  pg.forEach(j=>{
+    h+='<div class="tcard"><div class="tt"><b>'+esc(j.name)+'</b>'+statusTag(j.status)+'</div>'+
+    '<div class="meta"><span>👥 '+j.signed+'/'+j.need+'</span><span>📅 截止 '+esc(j.deadline)+'</span><span>🖼 '+(j.images&&j.images.length?j.images.length+' 张参考图':'无图')+'</span><span class="tag done">✅ 已完成 '+DB.records.filter(r=>r.jobId===j.id&&r.status==='已确认').length+' 人</span></div>'+
+    '<div style="margin-top:6px"><button class="btn sm" onclick="jobDetail(\''+j.id+'\',false)">详情</button> <button class="btn sm orange" onclick="editJob(\''+j.id+'\')">编辑</button> <button class="btn sm red" onclick="delJob(\''+j.id+'\')">删除</button></div></div>';
+  });
+  h+=pagerHTML(C.page,mine.length,per,'C.page')+'</div>';
+  return h;
+}
+function editJob(id){
+  C.editJobId=id; C.jobImgs=(DB.jobs.find(j=>j.id===id).images||[]).slice();
+  cTab('post',document.querySelector('#commTabs button[data-t=post]'));
+  setTimeout(drawJobPrev,50);
+}
+function delJob(id){
+  const j=DB.jobs.find(x=>x.id===id);
+  confirmBox('确定删除岗位【'+esc(j.name)+'】吗？相关报名信息将无法查看，不可恢复。',()=>{
+    DB.jobs=DB.jobs.filter(x=>x.id!==id);save();toast('岗位已删除','ok');renderComm();
+  });
+}
+function cAudit(){
+  const mineIds=DB.jobs.filter(j=>j.owner===OWNER).map(j=>j.id);
+  const list=DB.signups.filter(s=>mineIds.includes(s.jobId));
+  const per=5,pg=list.slice((C.auditPage-1)*per,C.auditPage*per);
+  let h='<div class="card"><h4>📝 报名审核（通过后生成服务任务单）</h4>'+(pg.length?'':'<div class="empty">暂无报名</div>');
+  pg.forEach(s=>{
+    const ord='RW-'+s.id.slice(1);
+    h+='<div class="tcard"><div class="tt"><b>'+esc(s.student)+'</b><span class="mini">'+esc(s.cls)+'</span>'+statusTag(s.status)+'</div>'+
+    '<div class="meta"><span>'+esc(s.jobName)+'</span><span>任务单号 '+ord+'</span></div>'+
+    (s.status==='待审核'?'<div style="margin-top:5px"><button class="btn sm green" onclick="auditSignup(\''+s.id+'\',true)">通过</button> <button class="btn sm red" onclick="auditSignup(\''+s.id+'\',false)">拒绝</button></div>':'')+
+    (s.status==='已通过'?'<div style="margin-top:5px"><button class="btn sm orange" onclick="finishSignup(\''+s.id+'\')">✅ 确认服务完成</button></div>':'')+
+    '</div>';
+  });
+  h+=pagerHTML(C.auditPage,list.length,per,'C.auditPage')+'</div>';
+  return h;
+}
+function auditSignup(id,pass){
+  const s=DB.signups.find(x=>x.id===id);
+  if(pass){
+    s.status='已通过';
+    DB.records.unshift({id:uid('R'),student:s.student,cls:s.cls,taskName:s.jobName,layer:'社区服务层',source:'job',jobId:s.jobId,duration:60,date:new Date().toISOString().slice(0,10),desc:'（服务任务单已生成，待服务留痕）',media:[],status:'待审核',ai:null,uploader:'社区'});
+    toast('已通过，服务任务单已生成','ok');
+  }else{ s.status='已拒绝'; const j=DB.jobs.find(x=>x.id===s.jobId); if(j&&j.signed>0)j.signed--; toast('已拒绝该报名','ok'); }
+  save();renderComm();
+}
+function finishSignup(id){ DB.signups.find(x=>x.id===id).status='服务完成'; save(); toast('服务已完成，家长/社区可上传留痕材料','ok'); renderComm(); }
+function cUp(){
+  const mineIds=DB.jobs.filter(j=>j.owner===OWNER).map(j=>j.id);
+  const list=DB.records.filter(r=>r.source==='job'&&mineIds.includes(r.jobId));
+  let h='<div class="privacy-tip">🔒 隐私保护提示：上传的照片/视频必须遮挡未成年人面部（马赛克、贴纸等），仅保留劳动场景与动作；素材仅用于本校道法与劳动融合课题教学评价与教研存档，禁止私自转发、对外传播。</div>';
+  h+='<div class="card"><h4>⬆️ 上传服务照片 / 视频 / 文档</h4>';
+  if(!list.length){h+='<div class="empty">暂无本社区关联的服务任务</div></div>';return h;}
+  h+='<label class="f">选择服务任务</label><select id="cuRec">'+list.map(r=>'<option value="'+r.id+'">'+esc(r.student)+'（'+esc(r.cls)+'）· '+esc(r.taskName)+'</option>').join('')+'</select>'+
+  '<label class="f">服务说明</label><textarea id="cuDesc" placeholder="描述服务过程与成效…"></textarea>'+
+  '<label class="f">照片 / 视频 / 文档</label><input type="file" id="cuFiles" multiple accept="image/*,video/*,.doc,.docx,.pdf" onchange="pickCuFiles(this)">'+
+  '<div class="imgrow" id="cuPrev"></div>'+
+  '<div class="priv-must"><input type="checkbox" id="cuMask"><span>我已确认：素材已遮挡未成年人面部，仅用于本校课题教研存档。</span></div>'+
+  '<div style="text-align:center;margin-top:10px"><button class="btn orange" onclick="uploadComm()">提交留痕材料</button></div></div>';
+  // 本端上传的服务记录列表（社区端只能改/删自己上传的）
+  const mine=DB.records.filter(r=>r.uploader==='社区');
+  const per=4,pg=mine.slice((C.page-1)*per,C.page*per);
+  h+='<div class="card"><h4>🗂️ 本端上传的服务记录列表</h4>'+(pg.length?'':'<div class="empty">本端还没有上传过服务记录</div>');
+  pg.forEach(r=>{
+    h+='<div class="tcard"><div class="tt"><b>'+esc(r.student)+'</b><span class="mini">'+esc(r.cls)+'</span>'+statusTag(r.status)+'</div>'+
+    '<div style="font-size:13px">'+esc(r.taskName)+'</div>'+
+    '<div class="meta"><span>🏫 '+esc(r.school||'—')+'</span><span>'+esc(r.cls)+'</span><span>⏱ '+r.duration+' 分钟</span><span>📅 '+esc(r.date)+'</span><span>上传：'+esc(r.uploader)+'</span></div>'+
+    (r.desc?'<div class="cm">'+esc(r.desc)+'</div>':'')+
+    mediaHTML(r)+
+    '<div style="margin-top:6px"><button class="btn sm" onclick="editRec(\''+r.id+'\',false)">✏️ 修改</button> <button class="btn sm red" onclick="delRec(\''+r.id+'\')">🗑 删除</button></div></div>';
+  });
+  h+=pagerHTML(C.page,mine.length,per,'C.page')+'</div>';
+  return h;
+}
+let _cuMedia=[];
+function pickCuFiles(inp){
+  [...inp.files].forEach(f=>{
+    const kind=f.type.startsWith('image')?'img':(f.type.startsWith('video')?'video':'doc');
+    if(kind==='img'&&f.size<800*1024){const rd=new FileReader();rd.onload=e=>{_cuMedia.push({kind,name:f.name,url:e.target.result});drawCuPrev();};rd.readAsDataURL(f);}
+    else{_cuMedia.push({kind,name:f.name,url:URL.createObjectURL(f),temp:true});drawCuPrev();}
+  }); inp.value='';
+}
+function drawCuPrev(){ const b=$('cuPrev'); if(b)b.innerHTML=_cuMedia.map((m,i)=>'<div class="im">'+(m.kind==='img'?'<img src="'+m.url+'">':'<div style="width:110px;height:80px;border-radius:8px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px">'+(m.kind==='video'?'🎬 ':'📄 ')+esc(m.name.slice(0,12))+'</div>')+'<button class="del" onclick="_cuMedia.splice('+i+',1);drawCuPrev()">✕</button></div>').join(''); }
+function uploadComm(){
+  if(!$('cuMask').checked){toast('请先勾选隐私确认','err');return;}
+  const desc=$('cuDesc').value.trim(); if(!desc){toast('请填写服务说明','warn');return;}
+  const r=DB.records.find(x=>x.id===$('cuRec').value); if(!r)return;
+  r.desc=desc; r.media=(r.media||[]).concat(_cuMedia.slice()); r.status='待审核'; r.uploader='社区'; r.school='湛江市第三十三小学';
+  _cuMedia=[];save();toast('留痕材料已提交，等待教师审核','ok');renderComm();
+}
+function cEv(){
+  const mineIds=DB.jobs.filter(j=>j.owner===OWNER).map(j=>j.id);
+  const list=DB.records.filter(r=>mineIds.includes(r.jobId)||r.layer==='社区服务层');
+  const per=4,pg=list.slice((C.evPage-1)*per,C.evPage*per);
+  let h='<div class="card"><h4>👀 学生评价（家校社三方共看）</h4>'+(pg.length?'':'<div class="empty">暂无记录</div>');
+  pg.forEach(r=>{
+    h+='<div class="tcard"><div class="tt"><b>'+esc(r.student)+'</b><span class="mini">'+esc(r.cls)+'</span>'+statusTag(r.status)+'</div>'+
+    '<div style="font-size:13px">'+esc(r.taskName)+'</div><div class="meta"><span>⏱ '+r.duration+' 分钟</span><span>📅 '+esc(r.date)+'</span></div>';
+    ['学生','家长','教师'].forEach(role=>{
+      const e=evalOf(r.id,role);
+      h+='<div class="meta"><span>'+({'学生':'🧒','家长':'👨‍👩‍👧','教师':'🏫'}[role])+' '+role+(e?' '+starsShow(e.stars):' 暂无')+'</span></div>'+
+      (e&&e.comment?'<div class="cm">'+esc(e.comment)+'</div>':'');
+    });
+    if(r.ai)h+='<div class="ai-box">🤖 AI评分 '+r.ai.score+'（'+r.ai.level+'）· '+esc(r.ai.sum.c)+'</div>';
+    const old=evalOf(r.id,'社区'),key='ce_'+r.id;
+    h+='<div style="border-top:1px dashed var(--line);padding-top:8px;margin-top:6px"><b style="font-size:12px">🏘️ 社区评价</b>'+(old?' <span class="mini">已提交，可修改自己的评价</span>':'')+
+    '<div style="margin:4px 0">'+starInput(key,old?old.stars:0)+'</div>'+
+    '<textarea id="tx_'+key+'" placeholder="社区评语…">'+(old?esc(old.comment):'')+'</textarea>'+
+    '<div style="text-align:right"><button class="btn sm orange" onclick="commEval(\''+r.id+'\',\''+key+'\')">'+(old?'修改社区评价':'提交社区评价')+'</button></div></div>';
+    // 本端已做出的社区评价管理
+    if(old&&old.author===OWNER){
+      h+='<div style="margin-top:6px"><button class="btn sm" onclick="editEval(\''+old.id+'\')">✏️ 修改</button> <button class="btn sm red" onclick="delEval(\''+old.id+'\')">🗑 删除</button></div>';
+    }
+    h+='</div>';
+  });
+  h+=pagerHTML(C.evPage,list.length,per,'C.evPage')+'</div>';
+  return h;
+}
+function commEval(rid,key){
+  const stars=_starVals[key]||0,c=$('tx_'+key).value.trim();
+  if(!stars){toast('请先打星','warn');return;} if(!c){toast('请填写评语','warn');return;}
+  const old=evalOf(rid,'社区');
+  if(old){old.stars=stars;old.comment=c;} else DB.evals.push({id:uid('E'),recordId:rid,role:'社区',stars,comment:c,author:OWNER,createdAt:new Date().toISOString().slice(0,10)});
+  save();toast('社区评价提交成功','ok');renderComm();
+}
+
+/* 点击遮罩关闭弹窗 */
+document.querySelectorAll('.modal-mask').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)m.classList.remove('show');}));
+
+/* 启动：优先从后端拉取最新云端数据，并建立实时同步（跨设备/跨端无需手动刷新） */
+load().then(()=>{ initClassSelects(); bindSync(); }).catch(()=>{ initClassSelects(); bindSync(); });
+/* 直接双击打开（file://）时无法连接后端，提示用户改用服务端地址访问，否则数据无法跨设备同步 */
+if(location.protocol==='file:'){
+  let b=document.getElementById('apiBar');
+  if(!b){ b=document.createElement('div'); b.id='apiBar'; b.style.cssText='position:fixed;top:0;left:0;right:0;z-index:9999;text-align:center;font-size:13px;padding:6px;background:#fde2e2;color:#a10000;border-bottom:1px solid #f5b5b5'; document.body.appendChild(b); }
+  b.textContent='⚠️ 检测到以本地文件方式打开，未连接服务器，数据无法跨设备同步。请先运行「start.bat」启动服务，再访问 http://localhost:8787';
+}
+</script>
+</body>
+</html>
