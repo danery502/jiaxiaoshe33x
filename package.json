@@ -1,0 +1,17 @@
+{
+  "name": "ldjy-cloudbase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "家校社协同劳动教育AI任务链平台 · CloudBase 云托管后端",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "init-db": "node init-db.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@cloudbase/node-sdk": "^2.7.0"
+  }
+}
